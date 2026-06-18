@@ -43,7 +43,7 @@ export default function GuideWelcomeDialog() {
       localStorage.setItem("nt-guide-popup-shown", "true");
 
       if (result.isConfirmed) {
-        router.push("/guide");
+        router.push("/living-in-darwin");
       }
     });
   }, [router, shown]);
