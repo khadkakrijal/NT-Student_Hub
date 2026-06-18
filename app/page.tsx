@@ -2,15 +2,9 @@ import GuideWelcomeDialog from "./components/GuideWelcomeDialog";
 import HeroSection from "./components/HeroSection";
 import HomeQuickActions from "./components/home/HomeQuickActions";
 import HomeGuideSections from "./components/home/HomeGuideSections";
-import HomeListingPreview from "./components/home/HomeListingPreview";
 import HomeSafetySection from "./components/home/HomeSafetySection";
 
 import { getCurrentProfile } from "@/app/api/apiServices/profileService";
-import { getApprovedListings } from "@/app/api/apiServices/listingService";
-import { getApprovedEvents } from "@/app/api/apiServices/eventService";
-import { getApprovedCommunityPosts } from "@/app/api/apiServices/communityService";
-import HomeEventsPreview from "./components/home/HomeEventsPreview";
-import HomeCommunityPreview from "./components/home/HomeCommunityPreview";
 import HomeWelcomeBack from "./components/home/HomeWelcomeBack";
 import { getHomeDashboardStats } from "./api/apiServices/homeDashboardService";
 import HomePlatformStats from "./components/home/HomePlatformStats";
@@ -30,7 +24,7 @@ export default async function Home() {
   const featured = await getFeaturedContent();
   const recentlyAdded = await getRecentlyAddedContent();
   const recommendations = await getPersonalizedRecommendations();
-console.log(banners,"banners in homepage")
+
   return (
     <main className="bg-[#12091f]">
       <GuideWelcomeDialog />
