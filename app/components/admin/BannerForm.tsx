@@ -10,17 +10,7 @@ export default function BannerForm() {
   async function handleSubmit(formData: FormData) {
     setLoading(true);
 
-    const result = await createBanner({
-      title: String(formData.get("title") || ""),
-      description: String(formData.get("description") || ""),
-      button_text: String(formData.get("button_text") || ""),
-      button_link: String(formData.get("button_link") || ""),
-      image_url: String(formData.get("image_url") || ""),
-      is_active: formData.get("is_active") === "on",
-      start_date: String(formData.get("start_date") || "") || null,
-      end_date: String(formData.get("end_date") || "") || null,
-    });
-
+    const result = await createBanner(formData);
     setLoading(false);
 
     Swal.fire({
@@ -47,13 +37,30 @@ export default function BannerForm() {
       <h2 className="text-2xl font-black">Create Banner</h2>
 
       <div className="mt-5 grid gap-4 md:grid-cols-2">
-        <input name="title" required placeholder="Banner title" className="input-style" />
+        <input
+          name="title"
+          required
+          placeholder="Banner title"
+          className="input-style"
+        />
 
-        <input name="button_text" placeholder="Button text" className="input-style" />
+        <input
+          name="button_text"
+          placeholder="Button text"
+          className="input-style"
+        />
 
-        <input name="button_link" placeholder="Button link e.g. /events" className="input-style" />
+        <input
+          name="button_link"
+          placeholder="Button link e.g. /events"
+          className="input-style"
+        />
 
-        <input name="image_url" placeholder="Image URL optional" className="input-style" />
+        <input
+          name="image_url"
+          placeholder="Image URL optional"
+          className="input-style"
+        />
 
         <input name="start_date" type="date" className="input-style" />
 
