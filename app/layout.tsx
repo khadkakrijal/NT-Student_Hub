@@ -15,9 +15,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NT Student Hub",
+  metadataBase: new URL("https://nt-student-hub.vercel.app"),
+
+  title: {
+    default: "NT Student Hub",
+    template: "%s | NT Student Hub",
+  },
+
   description:
-    "Accommodation, jobs, community and support for students in the Northern Territory.",
+    "Accommodation, jobs, events, community and support for students in the Northern Territory.",
+
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
+
+  openGraph: {
+    title: "NT Student Hub",
+    description:
+      "Find accommodation, jobs, events and connect with students across Darwin and the Northern Territory.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 1200,
+        alt: "NT Student Hub",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
