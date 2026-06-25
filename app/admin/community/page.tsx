@@ -13,7 +13,7 @@ export default async function AdminCommunityPage() {
           Admin Community
         </p>
 
-        <h1 className="mt-3 text-4xl font-black">Community Moderation</h1>
+        <h1 className="mt-3 text-2xl font-black">Community Moderation</h1>
 
         <p className="mt-3 text-violet-50/70">
           Review community posts and replies before they become public.

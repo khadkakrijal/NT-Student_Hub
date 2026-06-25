@@ -21,7 +21,7 @@ export default async function AdminUsersPage() {
             Admin Users
           </p>
 
-          <h1 className="mt-3 text-4xl font-black">Users</h1>
+          <h1 className="mt-3 text-2xl font-black">Users</h1>
 
           <p className="mt-3 text-violet-50/70">
             Manage student, host, and admin profile records.
@@ -37,9 +37,7 @@ export default async function AdminUsersPage() {
                 <TableHead className="text-violet-100/70">Name</TableHead>
                 <TableHead className="text-violet-100/70">Email</TableHead>
                 <TableHead className="text-violet-100/70">Phone</TableHead>
-                <TableHead className="text-violet-100/70">
-                  University
-                </TableHead>
+                <TableHead className="text-violet-100/70">University</TableHead>
                 <TableHead className="text-violet-100/70">Role</TableHead>
                 <TableHead className="text-right text-violet-100/70">
                   Actions

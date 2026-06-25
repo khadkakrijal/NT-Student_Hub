@@ -84,7 +84,7 @@ export default function HomeQuickActions({ role }: { role: Role }) {
   const isAdmin = role === "admin";
 
   return (
-    <section className="relative overflow-hidden px-6 py-20">
+    <section className="relative overflow-hidden px-6 py-5">
       <div className="absolute left-10 top-20 h-72 w-72 rounded-full bg-violet-500/10 blur-3xl" />
       <div className="absolute right-10 bottom-10 h-72 w-72 rounded-full bg-fuchsia-500/10 blur-3xl" />
 
@@ -95,7 +95,7 @@ export default function HomeQuickActions({ role }: { role: Role }) {
               Start here
             </p>
 
-            <h2 className="mt-3 text-4xl font-black md:text-5xl">
+            <h2 className="mt-3 text-2xl font-black md:text-2xl">
               Everything you need to settle in Darwin.
             </h2>
 
@@ -144,9 +144,7 @@ export default function HomeQuickActions({ role }: { role: Role }) {
                 Admin Tools
               </p>
 
-              <h3 className="mt-3 text-3xl font-black">
-                Platform management
-              </h3>
+              <h3 className="mt-3 text-3xl font-black">Platform management</h3>
 
               <p className="mt-3 max-w-2xl text-violet-50/65">
                 Review pending content, manage users and keep the platform safe

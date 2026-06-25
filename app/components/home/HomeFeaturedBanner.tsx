@@ -52,7 +52,7 @@ export default function HomeFeaturedBanner({ banners }: { banners: Banner[] }) {
                   Featured Announcement
                 </div>
 
-                <h2 className="mt-5 max-w-4xl text-4xl font-black leading-tight md:text-5xl">
+                <h2 className="mt-5 max-w-4xl text-2xl font-black leading-tight md:text-2xl">
                   {banner.title}
                 </h2>
 

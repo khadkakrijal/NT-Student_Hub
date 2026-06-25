@@ -5,8 +5,13 @@ import {
   CloudRain,
   Compass,
   GraduationCap,
+  HeartPulse,
+  Landmark,
   MapPin,
   Phone,
+  ShieldCheck,
+  ShoppingBag,
+  Stethoscope,
   Utensils,
   Wallet,
   type LucideIcon,
@@ -37,553 +42,751 @@ export const livingPages: LivingPage[] = [
     title: "About Darwin",
     icon: MapPin,
     description:
-      "Understand Darwin’s lifestyle, suburbs, backpacker culture, student life, work competition, and what makes the Top End different.",
+      "A practical introduction to Darwin for new international students, including lifestyle, suburbs, weather, work, transport and student life.",
     sections: [
       {
-        heading: "Darwin is different from bigger Australian cities",
+        heading: "What Darwin is like",
         summary:
-          "Darwin is smaller, warmer, more relaxed, and more seasonal than major cities like Sydney, Melbourne or Brisbane. This makes daily student life feel different, especially around transport, work, weather and accommodation choices.",
+          "Darwin is smaller, warmer and more relaxed than major cities like Sydney, Melbourne and Brisbane. It has a strong outdoor lifestyle and a close community feel.",
         points: [
-          "Darwin has a slower lifestyle, smaller city centre, strong outdoor culture and close community networks.",
-          "Students should think carefully about campus distance, transport, shops, part-time work and weather before choosing a suburb.",
-          "The city has strong multicultural communities, including South Asian, Nepali, Thai, Filipino, Indonesian, Vietnamese and other Asian communities.",
+          "Darwin is the capital city of the Northern Territory.",
+          "It is multicultural, tropical, relaxed and community-focused.",
+          "Students often notice that distances, transport and weather affect daily life more than in bigger cities.",
+          "The city has many international communities, including Nepali, Indian, Filipino, Thai, Indonesian, Vietnamese and other multicultural groups.",
+          "Darwin has two main seasons: Dry season and Wet season.",
         ],
         studentTips: [
-          "Do not choose a room only because it is cheap; check transport and nearby shops first.",
-          "Ask other students about suburbs before paying bond.",
-          "Explore the city during your first few weeks so you understand distances better.",
+          "Before choosing accommodation, check distance to campus, work, shops and bus routes.",
+          "Explore Casuarina, Nightcliff, Coconut Grove, Rapid Creek, Darwin CBD and Palmerston before deciding where to live.",
+          "Join student and community groups to settle faster.",
         ],
         commonMistakes: [
-          "Assuming Darwin public transport is like Sydney or Melbourne.",
-          "Choosing accommodation far from campus or work without checking bus frequency.",
-          "Underestimating heat, humidity and wet season travel difficulty.",
-        ],
-        examples: [
-          "A cheaper room in a far suburb may become expensive if you need taxis or rideshares often.",
-          "A student without a car may find life easier near Casuarina, Darwin CBD, Nightcliff, Coconut Grove or other areas with better transport access.",
+          "Choosing the cheapest room without checking transport.",
+          "Assuming Darwin buses run like bigger cities.",
+          "Underestimating heat, humidity and wet season rain.",
         ],
       },
       {
-        heading: "Backpackers and seasonal movement",
-        summary:
-          "Darwin attracts backpackers, working holiday makers and seasonal workers, especially during the Dry season. This can increase both job opportunities and competition.",
+        heading: "Popular student suburbs",
         points: [
-          "Backpackers often look for hospitality, tourism, farm, cleaning and casual jobs.",
-          "Dry season can bring more events, tourism activity and hospitality shifts.",
-          "More people looking for work can also mean stronger competition for students.",
+          "Casuarina is popular because of CDU, Casuarina Square, buses and student housing.",
+          "Nightcliff is popular for the foreshore, markets, cafes and lifestyle.",
+          "Coconut Grove and Rapid Creek are convenient for students who want access to Casuarina and Nightcliff.",
+          "Darwin CBD is good for city jobs, restaurants and events, but rent may be higher.",
+          "Palmerston can be cheaper but transport time to CDU or CBD can be longer.",
         ],
         studentTips: [
-          "Prepare your resume before arriving or early after arrival.",
-          "Apply consistently instead of waiting for one perfect job.",
-          "Visit businesses in person where appropriate, especially hospitality and retail.",
-        ],
-        commonMistakes: [
-          "Waiting until money is low before applying for jobs.",
-          "Only applying online and never following up.",
-          "Ignoring availability; employers often want clear shift availability.",
+          "Use Google Maps public transport mode before paying bond.",
+          "Ask current students about suburb safety, buses and grocery access.",
+          "If you do not have a car, choose a suburb with better bus access.",
         ],
       },
       {
-        heading: "Why students should learn Darwin first",
-        summary:
-          "Understanding Darwin before choosing accommodation can prevent stress with transport, jobs, groceries and safety.",
+        heading: "Student lifestyle",
         points: [
-          "A cheap room may not be useful if buses are limited or shops are far away.",
-          "Wet season rain, heat, humidity and storms can affect daily travel.",
-          "Students should compare accommodation with campus, work, groceries, pharmacy and transport access.",
-        ],
-        studentTips: [
-          "Use Google Maps to check bus routes before messaging a host.",
-          "Ask if bills, internet and furniture are included.",
-          "Check whether the location is practical during wet season.",
+          "Many students work in hospitality, retail, support work, cleaning, admin and events.",
+          "Darwin has many outdoor places such as Nightcliff Foreshore, East Point, Waterfront and markets.",
+          "Community football, cultural events and student meetups are common.",
+          "Dry season is usually the best time for outdoor activities.",
+          "Wet season can affect transport, work shifts and weekend plans.",
         ],
       },
     ],
   },
+
   {
-    slug: "weather",
-    title: "Weather & Seasons",
-    icon: CloudRain,
+    slug: "bus-routes",
+    title: "Bus Routes & Public Transport",
+    icon: Bus,
     description:
-      "Learn about Darwin’s Dry season, Wet season, storms, humidity, cyclone preparation, and how weather affects student life.",
+      "Understand Darwin bus routes, Casuarina Interchange, CDU access, Palmerston travel and transport planning before choosing accommodation.",
     sections: [
       {
-        heading: "Dry Season: May to October",
+        heading: "Why bus routes matter",
         summary:
-          "The Dry season is usually the easiest time for new students to settle in Darwin. The weather is more comfortable, outdoor activities are easier, and tourism-related work can become busier.",
+          "Public transport can strongly affect student life in Darwin. A room may look close on the map but still be difficult without a direct bus.",
         points: [
-          "The weather is usually less humid with very little rain.",
-          "Tourism, hospitality, restaurants, hotels and events can become busier.",
-          "It is easier to explore places like Nightcliff, East Point, Mindil Beach, markets and Litchfield.",
+          "Casuarina Interchange is one of the main transport points for students.",
+          "CDU Casuarina students should check routes to Casuarina and the campus area.",
+          "Palmerston to CDU or Darwin CBD can take longer, depending on route and time.",
+          "Nightcliff, Rapid Creek and Coconut Grove can be convenient if buses match your study or work times.",
+          "Late-night or early-morning work shifts may be difficult without a car.",
         ],
         studentTips: [
-          "Use Dry season to explore suburbs before signing a long lease.",
-          "Apply early for hospitality, hotel and event work.",
-          "Still carry water and sun protection because Darwin can remain hot.",
+          "Check bus routes before paying bond.",
+          "Search travel time at the exact time you need to go to class or work.",
+          "Keep a backup plan for late shifts, wet season rain or missed buses.",
         ],
         commonMistakes: [
-          "Thinking Dry season means cold weather.",
-          "Leaving job applications too late during busy months.",
+          "Only checking car distance instead of public transport distance.",
+          "Choosing accommodation far from a bus stop.",
+          "Not checking weekend and evening bus frequency.",
         ],
       },
       {
-        heading: "Wet Season: November to April",
-        summary:
-          "Wet season brings higher humidity, heavy rain, storms, monsoon conditions and cyclone risk. It can affect transport, outdoor plans and sometimes work availability.",
+        heading: "Useful transport tools",
         points: [
-          "Humidity is higher and storms can be intense.",
-          "Some outdoor activities, roads, parks and swimming areas may close or change access.",
-          "Some tourism jobs may slow down, but retail, cleaning, care work, hospitality and local services can still have work.",
-        ],
-        studentTips: [
-          "Keep a power bank, torch, water, important documents and simple food ready.",
-          "Check official alerts before travelling during storms.",
-          "Avoid floodwater and never drive through flooded roads.",
-        ],
-        commonMistakes: [
-          "Choosing accommodation far from transport without considering heavy rain.",
-          "Not preparing for cyclone season until the last moment.",
+          "Use Google Maps to check bus routes and walking distance.",
+          "Check official Darwinbus or NT Government transport information for timetable updates.",
+          "Look for nearby bus stops before inspecting a room.",
+          "Save your most used route in your phone.",
+          "Allow extra time during rain and storms.",
         ],
       },
       {
-        heading: "Student preparation",
-        summary:
-          "Weather preparation is part of normal life in Darwin. Students living in shared houses should talk with housemates about emergency planning.",
+        heading: "Transport questions to ask before renting",
         points: [
-          "Keep emergency supplies in your room or shared house.",
-          "Save important contacts and know your address clearly.",
-          "Follow official weather warnings during severe weather.",
-        ],
-        studentTips: [
-          "Keep passport, visa, CoE, OSHC and lease copies saved digitally.",
-          "Ask your host or housemates about cyclone preparation.",
+          "How far is the nearest bus stop?",
+          "How long does it take to reach CDU, work and groceries?",
+          "Are buses available early morning or late evening?",
+          "Is the street safe and well-lit if walking home at night?",
+          "Can housemates help with occasional lifts if needed?",
         ],
       },
     ],
   },
+
   {
-    slug: "jobs",
-    title: "Jobs & Employment",
-    icon: Briefcase,
+    slug: "health-insurance",
+    title: "Health Insurance (OSHC)",
+    icon: ShieldCheck,
     description:
-      "Understand student work opportunities, seasonal competition, backpackers, and realistic expectations for finding casual work.",
+      "A student-friendly guide to Overseas Student Health Cover, common OSHC providers, GP visits, claims, hospital cover and out-of-pocket costs.",
     sections: [
       {
-        heading: "Common student jobs",
+        heading: "What is OSHC?",
         summary:
-          "International students in Darwin often start with casual or part-time work in hospitality, retail, cleaning, events and support services.",
+          "OSHC means Overseas Student Health Cover. Most international students must maintain valid OSHC while holding a student visa.",
         points: [
-          "Hospitality jobs include kitchen hand, waiter, barista, food and beverage attendant and hotel work.",
-          "Retail jobs include supermarkets, shopping centres, customer service, stock work and warehouse support.",
-          "Other options include cleaning, delivery, aged care, disability support, admin, events and tutoring.",
+          "OSHC helps cover some medical costs while studying in Australia.",
+          "Most student visa holders must keep OSHC active for the full visa period.",
+          "Your OSHC provider may be Bupa, NIB, Medibank, Allianz Care or another approved provider.",
+          "OSHC does not mean every medical service is free.",
+          "Always check your policy details before booking treatment.",
         ],
         studentTips: [
-          "Create a simple one-page resume.",
-          "Prepare your availability clearly.",
-          "Apply to multiple industries, not only one type of job.",
+          "Download your OSHC provider app.",
+          "Keep your OSHC membership number saved.",
+          "Ask clinics if they can process OSHC directly.",
         ],
         commonMistakes: [
-          "Using the same resume for every job.",
-          "Not answering phone calls from unknown numbers after applying.",
-          "Saying you are available anytime but later rejecting shifts.",
+          "Thinking OSHC covers everything.",
+          "Not checking whether a clinic accepts your OSHC provider.",
+          "Forgetting to renew OSHC if visa or course dates change.",
         ],
       },
       {
-        heading: "Dry season opportunities",
-        summary:
-          "Dry season can create more work in tourism, hotels, restaurants, bars and events, but it can also bring more competition.",
+        heading: "What OSHC may cover",
         points: [
-          "Tourism and hospitality are usually busier.",
-          "Backpackers also arrive during this season looking for work.",
-          "Students should apply early and follow up professionally.",
-        ],
-        studentTips: [
-          "Visit venues in person during quieter hours.",
-          "Keep your resume ready before peak season.",
-          "Be polite and professional when following up.",
+          "Some GP doctor visits.",
+          "Emergency hospital treatment.",
+          "Some prescription medicines.",
+          "Some medical tests and pathology.",
+          "Hospital admission depending on policy conditions.",
         ],
       },
       {
-        heading: "Wet season challenges",
-        summary:
-          "Wet season may reduce some tourism work, and rain can make transport harder for students without cars.",
+        heading: "What may not be fully covered",
         points: [
-          "Some tourism-related work may slow down.",
-          "Rain and storms can affect transport and shift reliability.",
-          "Students should apply across retail, cleaning, care work, hospitality and local services.",
+          "Dental treatment is usually not included in basic OSHC.",
+          "Glasses and contact lenses may not be covered.",
+          "Physiotherapy may not be included.",
+          "Specialist appointments may require referrals and extra payment.",
+          "Some medicines may only be partly covered.",
         ],
         studentTips: [
-          "Look for jobs closer to your accommodation or bus route.",
-          "Have a backup transport plan for early morning or late-night shifts.",
+          "Ask the clinic about fees before the appointment.",
+          "Keep receipts if you need to claim later.",
+          "Check your OSHC app or website before visiting a provider.",
+        ],
+      },
+      {
+        heading: "Popular OSHC providers",
+        points: [
+          "Bupa OSHC.",
+          "NIB OSHC.",
+          "Medibank OSHC.",
+          "Allianz Care Australia.",
+          "ahm OSHC.",
         ],
       },
     ],
   },
+
+  {
+    slug: "medical-clinics",
+    title: "Medical Clinics & GP Services",
+    icon: Stethoscope,
+    description:
+      "Learn how to visit a doctor in Darwin, what to bring, how GP fees work, and what to check before booking an appointment.",
+    sections: [
+      {
+        heading: "What is a GP?",
+        summary:
+          "A GP is a general practitioner. For most non-emergency health problems, students should usually start with a GP appointment.",
+        points: [
+          "GPs help with common sickness, medical certificates, referrals, vaccinations and basic health advice.",
+          "You may need a GP referral before seeing a specialist.",
+          "Some clinics may charge upfront, even if you have OSHC.",
+          "Some clinics may offer direct billing with selected OSHC providers.",
+          "For emergencies, call 000 or go to hospital emergency services.",
+        ],
+        studentTips: [
+          "Bring your OSHC card or app.",
+          "Bring passport, student ID or other photo ID.",
+          "Ask about consultation fees before booking.",
+        ],
+      },
+      {
+        heading: "Clinics students may check",
+        points: [
+          "CDU Medical Centre if available for your campus or student access.",
+          "Casuarina medical centres and GP clinics.",
+          "Nightcliff GP clinics.",
+          "Palmerston GP clinics.",
+          "Darwin CBD medical clinics.",
+          "Royal Darwin Hospital for emergency or major hospital care.",
+        ],
+        commonMistakes: [
+          "Going to hospital emergency for minor issues that a GP can handle.",
+          "Not checking clinic fees before booking.",
+          "Forgetting to bring OSHC details.",
+        ],
+      },
+      {
+        heading: "When to see a GP",
+        points: [
+          "Cold, flu, fever or infection symptoms.",
+          "Medical certificates for work or study.",
+          "Mental health support and referrals.",
+          "Injuries that are not life-threatening.",
+          "Vaccinations or prescription renewals.",
+          "Referrals for specialists or tests.",
+        ],
+      },
+    ],
+  },
+
+  {
+    slug: "health",
+    title: "Student Health & Wellbeing",
+    icon: HeartPulse,
+    description:
+      "Simple health, wellbeing and mental health advice for students adjusting to Darwin’s climate, study pressure and new lifestyle.",
+    sections: [
+      {
+        heading: "Physical health in Darwin",
+        points: [
+          "Drink enough water because Darwin can be hot and humid.",
+          "Use sunscreen, sunglasses and a hat when outdoors.",
+          "Avoid walking long distances in extreme heat if possible.",
+          "Keep basic medicines such as pain relief, cold medicine and first-aid items.",
+          "Sleep properly, especially during exam and work-heavy weeks.",
+        ],
+        studentTips: [
+          "Carry a water bottle daily.",
+          "Use mosquito protection during Wet season.",
+          "Keep your room clean and ventilated to avoid mould problems.",
+        ],
+      },
+      {
+        heading: "Mental health and homesickness",
+        points: [
+          "It is normal to feel lonely, stressed or homesick after moving to a new country.",
+          "Stay connected with friends and family, but also build local friendships.",
+          "Use university counselling or student support services early.",
+          "Balance work, study, football, social life and rest.",
+          "Ask for help before stress becomes overwhelming.",
+        ],
+        studentTips: [
+          "Join community events or sports teams.",
+          "Talk to trusted friends when you feel stressed.",
+          "Do not isolate yourself for long periods.",
+        ],
+      },
+      {
+        heading: "Healthy student habits",
+        points: [
+          "Cook at home more often to save money and eat healthier.",
+          "Exercise regularly, even simple walking or football helps.",
+          "Keep a weekly routine for study, work, cleaning and shopping.",
+          "Avoid taking too many shifts during assessment periods.",
+          "Book medical appointments early when symptoms continue.",
+        ],
+      },
+    ],
+  },
+
+  {
+    slug: "banking-and-tfn",
+    title: "Banking & Tax File Number",
+    icon: Landmark,
+    description:
+      "A practical guide to opening a bank account, applying for a Tax File Number, getting paid legally and preparing for work in Australia.",
+    sections: [
+      {
+        heading: "Opening a bank account",
+        points: [
+          "Popular banks include Commonwealth Bank, ANZ, NAB and Westpac.",
+          "You usually need your passport, visa details, Australian address and phone number.",
+          "Some banks allow students to start the process online before visiting a branch.",
+          "Choose a bank with nearby branches or ATMs if you prefer in-person support.",
+          "Set up online banking and keep your login details secure.",
+        ],
+        studentTips: [
+          "Open your account soon after arriving.",
+          "Use a strong password and do not share banking codes.",
+          "Be careful with scam calls asking for bank details.",
+        ],
+      },
+      {
+        heading: "Tax File Number (TFN)",
+        points: [
+          "A TFN is needed when you start working in Australia.",
+          "You can apply through the Australian Taxation Office website.",
+          "Applying for a TFN is free.",
+          "Give your TFN only to your employer, bank or official government services when needed.",
+          "Do not share your TFN casually with friends, agents or unknown people.",
+        ],
+        commonMistakes: [
+          "Paying someone to apply for a TFN even though it is free.",
+          "Sharing TFN screenshots in group chats.",
+          "Starting work without understanding payslips and tax.",
+        ],
+      },
+      {
+        heading: "Getting paid correctly",
+        points: [
+          "Most employers pay wages into your bank account.",
+          "Check payslips for hourly rate, tax, hours and superannuation.",
+          "Keep records of shifts and payments.",
+          "Ask questions if your pay does not match your hours.",
+          "Avoid cash jobs that seem unsafe, unfair or illegal.",
+        ],
+      },
+    ],
+  },
+
   {
     slug: "cost-of-living",
     title: "Cost of Living",
     icon: Wallet,
     description:
-      "Plan rent, bond, groceries, transport, phone, OSHC, car costs, and emergency savings before moving into accommodation.",
+      "Plan rent, bond, groceries, transport, phone, OSHC, car costs and emergency savings before moving into accommodation.",
     sections: [
       {
         heading: "Accommodation costs",
-        summary:
-          "Rent is usually the biggest weekly cost for students, but students also need to check bond, bills, furniture and internet.",
         points: [
-          "Always check weekly rent, bond amount, bills included or not included, internet, electricity and water.",
-          "Ask whether the room is furnished and whether kitchen items, washing machine and fridge access are included.",
-          "Do not pay bond or rent without confirming the room, address and host properly.",
+          "Rent is usually the biggest weekly cost for students.",
+          "Private rooms may cost more than shared rooms.",
+          "Bond is often required before moving in.",
+          "Ask whether electricity, water, internet and furniture are included.",
+          "A cheaper room can become expensive if transport is difficult.",
         ],
         studentTips: [
-          "Ask for clear photos and inspection before paying.",
-          "Confirm whether bills are included in writing.",
-          "Keep screenshots of payment discussions.",
-        ],
-        commonMistakes: [
-          "Paying bond before confirming the address.",
-          "Forgetting to ask about electricity and internet costs.",
+          "Confirm bills in writing before paying.",
+          "Inspect the room or ask for a video inspection.",
+          "Keep screenshots of rent, bond and agreement messages.",
         ],
       },
       {
-        heading: "Daily living costs",
-        summary:
-          "Students should plan for groceries, phone, transport, medicines, work clothes and emergency expenses.",
+        heading: "Weekly living expenses",
         points: [
-          "Groceries can be managed better by using supermarkets, Asian groceries, markets and weekly specials.",
-          "Students should budget for phone plan, transport, work clothes, medicines, study materials and emergencies.",
-          "If buying a car, include registration, insurance, fuel, servicing, tyres and repairs.",
-        ],
-        studentTips: [
-          "Cook at home often to reduce expenses.",
-          "Compare supermarkets, markets and Asian grocery stores.",
-          "Keep emergency savings before wet season if possible.",
+          "Groceries, phone plan, transport, medicines, work clothes and study supplies should be included in your budget.",
+          "Cooking at home usually saves money compared to takeaway.",
+          "Markets and weekly supermarket specials can reduce grocery costs.",
+          "If you own a car, budget for fuel, registration, insurance, servicing and repairs.",
+          "Keep emergency savings if possible.",
         ],
       },
       {
-        heading: "Budget advice",
-        summary:
-          "A good student budget should consider both rent and the hidden cost of location.",
+        heading: "Budget mistakes",
         points: [
-          "Keep emergency savings if possible, especially before wet season.",
-          "Compare suburbs carefully because cheaper rent can become expensive if transport is difficult.",
-          "Share cooking, groceries and transport with trusted housemates where appropriate.",
-        ],
-        examples: [
-          "A $20 cheaper room may not save money if you spend more on transport every week.",
-          "Living near campus, work or bus routes can reduce stress and costs.",
+          "Only calculating rent and forgetting bond.",
+          "Not budgeting for OSHC, phone, transport and food.",
+          "Buying a car without planning repair costs.",
+          "Taking too many work shifts and affecting study performance.",
+          "Spending too much during the first month after arrival.",
         ],
       },
     ],
   },
+
+  {
+    slug: "education",
+    title: "Education & Universities",
+    icon: GraduationCap,
+    description:
+      "Understand CDU campuses, private colleges, CRICOS checks, education agents, student support and choosing accommodation based on campus location.",
+    sections: [
+      {
+        heading: "Charles Darwin University",
+        points: [
+          "CDU Casuarina is one of Darwin’s major education locations.",
+          "CDU also has city campus facilities.",
+          "Students should check their exact campus before choosing accommodation.",
+          "Travel time can be different depending on whether classes are at Casuarina or city campus.",
+          "Use student support services for academic, wellbeing and enrolment help.",
+        ],
+        studentTips: [
+          "Check your timetable before finalising accommodation.",
+          "Save your student support contact details.",
+          "Attend orientation if available.",
+        ],
+      },
+      {
+        heading: "Private colleges and providers",
+        points: [
+          "Darwin has different education and training providers.",
+          "Students should check CRICOS registration before enrolling.",
+          "Confirm campus address, delivery mode, fees, intake dates and refund rules.",
+          "Keep copies of offer letter, CoE, payment receipts and visa documents.",
+          "Ask questions before signing or paying.",
+        ],
+      },
+      {
+        heading: "Education agents",
+        points: [
+          "Education agents can help with applications and provider information.",
+          "For migration advice, check whether the person is a registered migration agent.",
+          "Do not rely only on social media comments for course or visa decisions.",
+          "Compare official provider information with what an agent tells you.",
+          "Keep written records of advice and payments.",
+        ],
+      },
+    ],
+  },
+
+  {
+    slug: "jobs",
+    title: "Jobs & Employment",
+    icon: Briefcase,
+    description:
+      "Understand student work opportunities, seasonal competition, backpackers and realistic expectations for finding casual or part-time work.",
+    sections: [
+      {
+        heading: "Common student jobs",
+        points: [
+          "Hospitality: kitchen hand, waiter, barista, food and beverage attendant.",
+          "Retail: supermarkets, stock work, customer service and shopping centre jobs.",
+          "Support work: aged care, disability support and community services.",
+          "Cleaning: offices, hotels, schools and commercial cleaning.",
+          "Events: event staff, setup, ticketing and customer service.",
+          "Admin: reception, data entry and student-facing support roles.",
+        ],
+        studentTips: [
+          "Make a simple one-page resume.",
+          "Prepare clear weekly availability.",
+          "Apply to multiple industries instead of only one job type.",
+        ],
+        commonMistakes: [
+          "Using the same resume for every job.",
+          "Not answering phone calls after applying.",
+          "Saying you are available anytime but later refusing shifts.",
+        ],
+      },
+      {
+        heading: "Dry season and Wet season work",
+        points: [
+          "Dry season may create more work in tourism, hotels, restaurants and events.",
+          "Backpackers and working holiday makers also compete for seasonal jobs.",
+          "Wet season may slow some tourism work but local services still operate.",
+          "Retail, cleaning, support work and hospitality can continue year-round.",
+          "Transport reliability matters when accepting early or late shifts.",
+        ],
+      },
+      {
+        heading: "Work rights and safety",
+        points: [
+          "Check your visa work conditions carefully.",
+          "Keep payslips and records of your shifts.",
+          "Understand minimum wage and workplace rights.",
+          "Do not pay money to get a job.",
+          "Be careful with job scams asking for personal documents or upfront payments.",
+        ],
+      },
+    ],
+  },
+
   {
     slug: "food",
     title: "Food & Culture",
     icon: Utensils,
     description:
-      "Find student-friendly food, Nepali and Asian options, markets, affordable meals, and multicultural food culture.",
+      "Find student-friendly food, Nepali and Asian groceries, markets, affordable meals and Darwin’s multicultural food culture.",
     sections: [
       {
-        heading: "Nepali and South Asian food",
-        summary:
-          "Darwin has growing South Asian and Nepali food options, but cooking at home is still usually cheaper for students.",
+        heading: "Student food habits",
         points: [
-          "Students can find momo, curry, rice meals and community food events.",
-          "Community events may happen around Dashain, Tihar and other cultural celebrations.",
-          "Cooking at home with shared groceries is usually cheaper than eating out every day.",
-        ],
-        studentTips: [
-          "Buy rice, lentils, spices and basic groceries in bulk when possible.",
-          "Cook with housemates to reduce cost.",
-          "Follow local community pages for cultural events.",
+          "Cooking at home is usually cheaper than eating takeaway every day.",
+          "Buy rice, lentils, spices and frozen items in bulk when possible.",
+          "Share groceries and cooking with trusted housemates.",
+          "Plan meals around study and work shifts.",
+          "Keep simple emergency food during Wet season storms.",
         ],
       },
       {
-        heading: "Thai, Asian and market food",
-        summary:
-          "Darwin has strong Asian food culture, including Thai, Vietnamese, Indonesian, Filipino, Chinese and other cuisines.",
+        heading: "Markets and groceries",
         points: [
-          "Rapid Creek Markets are useful for Asian vegetables, fruit, breakfast and affordable weekend food.",
-          "Parap and Mindil markets are also popular for food and student hangouts.",
-          "Some markets are seasonal, so students should check opening times.",
-        ],
-        studentTips: [
-          "Use markets for fresh herbs, vegetables and affordable meals.",
-          "Check market days before travelling.",
+          "Rapid Creek Markets are useful for fruit, vegetables and Asian ingredients.",
+          "Parap Markets and Mindil Beach Markets are popular for food and socialising.",
+          "Coles, Woolworths and IGA are common supermarket options.",
+          "Asian grocery stores can be useful for rice, spices, noodles, sauces and vegetables.",
+          "Check opening days and times before travelling to markets.",
         ],
       },
       {
-        heading: "Student food tips",
-        summary:
-          "Food costs can increase quickly if students depend on takeaway every day.",
+        heading: "Multicultural food culture",
         points: [
-          "Learn basic cooking early because takeaway becomes expensive.",
-          "Use markets for fruit, vegetables, herbs and Asian ingredients.",
-          "Check opening hours before travelling because some food places are seasonal or close earlier than big-city venues.",
-        ],
-        commonMistakes: [
-          "Eating takeaway every day during the first month.",
-          "Not checking whether accommodation has proper kitchen access.",
+          "Darwin has Thai, Vietnamese, Filipino, Indonesian, Indian, Nepali and other multicultural food options.",
+          "Community events often include cultural food stalls and shared meals.",
+          "Food markets are good places to meet friends and explore Darwin culture.",
+          "Eating out is enjoyable but should be balanced with budgeting.",
         ],
       },
     ],
   },
+
+  {
+    slug: "shopping",
+    title: "Shopping & Daily Essentials",
+    icon: ShoppingBag,
+    description:
+      "Where students can buy groceries, clothing, furniture, electronics, study items and second-hand essentials in Darwin.",
+    sections: [
+      {
+        heading: "Everyday shopping",
+        points: [
+          "Casuarina Square is one of the main shopping centres used by students.",
+          "Darwin CBD has shops, food places and services.",
+          "Palmerston has shopping options for students living further south.",
+          "Supermarkets include Coles, Woolworths and IGA.",
+          "Kmart, Big W and similar stores are useful for basic student essentials.",
+        ],
+      },
+      {
+        heading: "Setting up your room",
+        points: [
+          "Students may need bedding, fan, study lamp, desk items, hangers, storage boxes and kitchen items.",
+          "Ask what furniture is included before moving in.",
+          "Facebook Marketplace and Gumtree can be useful for second-hand furniture.",
+          "Check item condition and transport before buying second-hand goods.",
+          "Do not pay deposits for items without verifying the seller.",
+        ],
+      },
+      {
+        heading: "Saving money",
+        points: [
+          "Compare prices before buying large items.",
+          "Buy second-hand when safe and practical.",
+          "Share some household items with housemates.",
+          "Use student discounts where available.",
+          "Avoid buying unnecessary items during the first week.",
+        ],
+      },
+    ],
+  },
+
   {
     slug: "transport",
     title: "Transport",
     icon: Bus,
     description:
-      "Understand buses, car dependency, cycling, walking, suburbs, wet season travel, and why transport matters before renting.",
+      "Understand buses, cars, walking, cycling, wet season travel and why transport matters before choosing accommodation.",
     sections: [
       {
-        heading: "Public buses",
-        summary:
-          "Darwin has public buses, but routes and frequency may not suit every student’s study, work and shopping schedule.",
+        heading: "Public transport basics",
         points: [
-          "Before choosing a room, check bus access to CDU, work, groceries and the city.",
-          "Living near a bus route can make student life much easier.",
-          "Some jobs with early starts or late finishes may be difficult without a car.",
-        ],
-        studentTips: [
-          "Check bus routes before paying bond.",
-          "Search travel time at the exact time you would travel for class or work.",
-          "Ask current students about transport in the suburb.",
-        ],
-        commonMistakes: [
-          "Only checking distance by car on Google Maps.",
-          "Choosing a room that looks close but has poor bus access.",
+          "Darwin has public buses, but frequency depends on route, suburb and time.",
+          "Students without cars should prioritise accommodation near useful bus routes.",
+          "Always compare travel time to campus, work and groceries.",
+          "Weekend and evening services may be different from weekday services.",
+          "Rain and storms can delay travel during Wet season.",
         ],
       },
       {
         heading: "Cars and driving",
-        summary:
-          "Many students eventually consider buying a car, but car ownership has extra costs.",
         points: [
-          "Car ownership includes registration, insurance, fuel, servicing and repair costs.",
-          "A car can help with late-night shifts, shopping and weekend trips.",
-          "During wet season, never drive through floodwater and check road conditions before longer trips.",
-        ],
-        studentTips: [
-          "Budget for insurance and repairs before buying a car.",
-          "Check registration and roadworthy condition carefully.",
+          "A car can help with late shifts, shopping and weekend trips.",
+          "Car costs include registration, insurance, fuel, servicing and repairs.",
+          "Check registration and condition before buying a used car.",
+          "Never drive through floodwater.",
+          "Plan parking costs if working or studying in the city.",
         ],
       },
       {
         heading: "Walking and cycling",
-        summary:
-          "Walking and cycling can help in some areas, but heat, humidity, rain and distance matter.",
         points: [
-          "Cycling can help around some suburbs but weather can be challenging.",
-          "Walking long distances in midday heat is not ideal.",
-          "Carry water, use sun protection and plan trips around weather.",
+          "Walking can be practical in some suburbs but difficult in heat or heavy rain.",
+          "Cycling may help around some areas but students should check safety and distance.",
+          "Carry water if walking or cycling during the day.",
+          "Use lights and reflective clothing if cycling at night.",
+          "Avoid isolated routes late at night.",
         ],
       },
     ],
   },
+
   {
     slug: "safety",
     title: "Safety, Cyclones & Crocodiles",
     icon: AlertTriangle,
     description:
-      "Important safety information for storms, crocodiles, water, beaches, camping, accommodation scams, and emergency planning.",
+      "Important safety information for storms, crocodiles, water, accommodation scams, transport and emergency planning.",
     sections: [
       {
-        heading: "Crocodile safety",
-        summary:
-          "Crocodile safety is very important in the Top End. Students should never treat natural waterways like normal swimming spots unless they are clearly marked safe.",
+        heading: "Crocodile and water safety",
         points: [
           "Never swim in rivers, creeks, mangroves, floodwater or unknown waterholes unless signs clearly say it is safe.",
-          "Follow crocodile warning signs and stay away from water edges in risk areas.",
-          "Be careful around mangroves, boat ramps, beaches, rivers and remote camping areas.",
-        ],
-        studentTips: [
-          "Ask locals before visiting natural swimming areas.",
-          "Do not stand close to water edges for photos in risky areas.",
-          "Follow official signs even if other people ignore them.",
+          "Follow crocodile warning signs.",
+          "Stay away from water edges in risky areas.",
+          "Be careful around boat ramps, beaches, mangroves and remote camping areas.",
+          "Ask locals or official sources before visiting natural swimming places.",
         ],
         commonMistakes: [
-          "Thinking a beach or river is safe because it looks calm.",
-          "Ignoring warning signs for photos or videos.",
+          "Thinking calm water means safe water.",
+          "Ignoring warning signs for photos.",
+          "Swimming in unknown waterholes without checking official safety information.",
         ],
       },
       {
-        heading: "Cyclone and storm safety",
-        summary:
-          "Wet season is also cyclone season in northern Australia, so students should know basic emergency preparation.",
+        heading: "Cyclone and storm preparation",
         points: [
-          "Prepare basic emergency items and follow official warnings.",
-          "Keep important documents saved safely.",
-          "If living with housemates, discuss what everyone should do during severe weather.",
-        ],
-        studentTips: [
-          "Keep a small emergency kit in your room.",
-          "Save emergency contacts and your address in your phone.",
+          "Wet season is also cyclone season in northern Australia.",
+          "Keep a torch, power bank, water and basic food ready.",
+          "Save important documents digitally.",
+          "Follow official weather warnings.",
+          "Talk with housemates about emergency plans.",
         ],
       },
       {
-        heading: "Accommodation safety",
-        summary:
-          "Accommodation scams can happen when students are desperate to find a room quickly.",
+        heading: "Accommodation and personal safety",
         points: [
-          "Inspect the room before paying where possible.",
-          "Avoid sending money before confirming the host and address.",
-          "Report suspicious listings and keep screenshots of messages and payment requests.",
-        ],
-        commonMistakes: [
-          "Paying quickly because the host says many people are interested.",
-          "Not checking whether photos match the actual address.",
+          "Inspect rooms where possible before paying.",
+          "Avoid paying bond before confirming the host and address.",
+          "Keep records of payments and messages.",
+          "Use well-lit areas when walking at night.",
+          "Report suspicious listings or unsafe behaviour.",
         ],
       },
     ],
   },
-  {
-    slug: "education",
-    title: "Education",
-    icon: GraduationCap,
-    description:
-      "Learn about CDU Casuarina, CDU Darwin City campus, CIM, colleges, education agencies, CRICOS checks, and student support.",
-    sections: [
-      {
-        heading: "Charles Darwin University",
-        summary:
-          "CDU is one of the main education providers for international students in Darwin, but students should confirm their exact campus before choosing accommodation.",
-        points: [
-          "CDU Casuarina is a major study location for Higher Education, TAFE and research.",
-          "CDU also has a Darwin City Education and Community Precinct at Cavenagh Street.",
-          "Students should check which campus they attend before choosing accommodation.",
-        ],
-        studentTips: [
-          "Check the campus on your timetable and offer documents.",
-          "Compare travel time to your exact campus, not only CDU generally.",
-        ],
-      },
-      {
-        heading: "Colleges and providers",
-        summary:
-          "Darwin has universities and private providers. Students should confirm provider details carefully before enrolling.",
-        points: [
-          "CIM has a Darwin campus and is relevant for international students looking at management or higher education pathways.",
-          "Other colleges and training providers may offer vocational or pathway programs.",
-          "Always check CRICOS registration, fees, campus location, intake dates and visa requirements before enrolling.",
-        ],
-        studentTips: [
-          "Check CRICOS details before paying fees.",
-          "Confirm campus location and class delivery mode.",
-        ],
-      },
-      {
-        heading: "Education agencies",
-        summary:
-          "Education agencies can help with applications, but students should still verify important information themselves.",
-        points: [
-          "Education agencies can help with applications, provider options and general study planning.",
-          "For migration advice, students should confirm whether the person is a registered migration agent.",
-          "Never rely only on social media comments for course or visa decisions.",
-        ],
-      },
-    ],
-  },
+
   {
     slug: "important-contacts",
     title: "Important Contacts",
     icon: Phone,
     description:
-      "Save emergency, health, police, university, accommodation, and safety contacts before you need them.",
+      "Save emergency, health, police, university, accommodation and safety contacts before you need them.",
     sections: [
       {
-        heading: "Emergency contacts",
-        summary:
-          "Students should save emergency numbers before they need them, especially if they are new to Australia.",
+        heading: "Emergency numbers",
         points: [
-          "Emergency: 000 for police, fire or ambulance.",
-          "Police Assistance Line: 131 444 for non-urgent police help.",
-          "Keep your address, nearest landmark and emergency contact details saved on your phone.",
-        ],
-        studentTips: [
-          "Save your full address in your phone notes.",
-          "Know how to explain your location clearly in an emergency.",
+          "000 for police, fire or ambulance emergencies.",
+          "131 444 for non-urgent police assistance.",
+          "Know your full address and nearest landmark.",
+          "Save emergency contacts in your phone.",
+          "If unsure during a serious emergency, call 000.",
         ],
       },
       {
-        heading: "Health and support",
-        summary:
-          "Knowing where to go for health support can reduce stress when you are sick or injured.",
+        heading: "Health and hospital",
         points: [
-          "Know where the nearest GP clinic, pharmacy and hospital are before you get sick.",
-          "International students should understand OSHC coverage and appointment costs.",
-          "Royal Darwin Hospital is the major hospital in Darwin.",
-        ],
-        studentTips: [
-          "Keep your OSHC card or app ready.",
-          "Know the closest pharmacy to your accommodation.",
+          "Royal Darwin Hospital is a major hospital in Darwin.",
+          "Know your nearest GP clinic and pharmacy.",
+          "Keep your OSHC details ready.",
+          "Ask about fees before non-emergency appointments.",
+          "For urgent medical situations, call 000.",
         ],
       },
       {
         heading: "Student support",
-        summary:
-          "Your education provider can often help with academic, wellbeing and general student support.",
         points: [
-          "Save your institution’s student support contact.",
-          "Keep copies of passport, visa, CoE, OSHC, lease and emergency contacts.",
-          "For accommodation problems, keep written records and ask for help early.",
+          "Save your university or college student support contact.",
+          "Keep copies of passport, visa, CoE, OSHC and lease.",
+          "Contact your provider early for academic or wellbeing issues.",
+          "Ask for help before problems become bigger.",
+          "Keep family emergency contacts updated.",
         ],
       },
     ],
   },
+
+  {
+    slug: "weather",
+    title: "Weather & Seasons",
+    icon: CloudRain,
+    description:
+      "Learn about Darwin’s Dry season, Wet season, storms, humidity, cyclone preparation and how weather affects student life.",
+    sections: [
+      {
+        heading: "Dry Season: May to October",
+        points: [
+          "Dry season usually has less rain and lower humidity.",
+          "It is one of the best times to explore Darwin.",
+          "Markets, events, tourism and outdoor activities are busier.",
+          "Nights can feel cooler but days are still warm.",
+          "Carry water and sun protection.",
+        ],
+      },
+      {
+        heading: "Wet Season: November to April",
+        points: [
+          "Wet season brings humidity, heavy rain, storms and possible cyclones.",
+          "Transport and outdoor plans may be affected.",
+          "Some roads, parks or swimming areas can close.",
+          "Keep basic emergency supplies ready.",
+          "Avoid floodwater and follow official weather warnings.",
+        ],
+      },
+      {
+        heading: "Student preparation",
+        points: [
+          "Choose accommodation carefully if you rely on buses.",
+          "Keep umbrella, rain jacket or waterproof bag during Wet season.",
+          "Protect electronics and documents from rain.",
+          "Check weather before long trips.",
+          "Stay hydrated in hot and humid weather.",
+        ],
+      },
+    ],
+  },
+
   {
     slug: "things-to-do",
     title: "Things to Do in Darwin",
     icon: Compass,
     description:
-      "Discover Darwin beaches, markets, parks, camping spots, wildlife attractions, sunset locations, and weekend activities for students.",
+      "Discover Darwin beaches, markets, parks, wildlife attractions, sunset locations and weekend activities for students.",
     sections: [
       {
-        heading: "Weekend markets and student hangouts",
-        summary:
-          "Darwin markets are a big part of local lifestyle and are useful for food, socialising and exploring the community.",
+        heading: "Popular student places",
         points: [
-          "Rapid Creek Markets are popular for tropical fruit, Asian vegetables, affordable breakfast and local community atmosphere.",
-          "Mindil Beach Sunset Market is famous for multicultural food, sunset views, music and seasonal events.",
-          "Parap Village Markets are popular for local food, fresh produce and weekend mornings.",
+          "Nightcliff Foreshore is popular for sunsets, walks and cycling.",
+          "Darwin Waterfront has food, lagoon swimming areas and city relaxation.",
+          "Mindil Beach Sunset Market is popular during the season.",
+          "East Point Reserve is good for nature, picnics and ocean views.",
+          "George Brown Botanic Gardens is a peaceful place to relax.",
         ],
-        studentTips: [
-          "Check market days before travelling.",
-          "Carry water and sun protection.",
+      },
+      {
+        heading: "Markets and food experiences",
+        points: [
+          "Rapid Creek Markets are popular for tropical fruit and Asian food.",
+          "Parap Markets are good for weekend breakfast and local food.",
+          "Mindil Beach Markets offer multicultural food and sunset views.",
+          "Check market seasons and opening days before travelling.",
           "Go with friends when exploring new places for the first time.",
         ],
       },
       {
-        heading: "Sunset and ocean places",
-        summary:
-          "Darwin has beautiful coastal areas, but students should understand that not every ocean or water area is safe for swimming.",
+        heading: "Weekend trips",
         points: [
-          "Nightcliff Jetty and foreshore are popular for sunset walks, cycling and relaxing.",
-          "Darwin Waterfront provides restaurants, lagoon swimming areas, walking paths and city relaxation.",
-          "East Point Reserve is peaceful for picnics, nature and ocean views.",
-        ],
-      },
-      {
-        heading: "Camping and national parks",
-        summary:
-          "Weekend trips are popular, but students should check weather, road access and safety warnings before travelling.",
-        points: [
-          "Litchfield National Park is popular for waterfalls, camping and nature trips.",
-          "Berry Springs Nature Park is popular for day trips and outdoor areas.",
-          "Always check weather, road access and official safety warnings before travelling during Wet season.",
-        ],
-        commonMistakes: [
-          "Travelling during bad weather without checking road conditions.",
-          "Swimming in places without checking safety signs.",
-        ],
-      },
-      {
-        heading: "Wildlife and crocodile attractions",
-        summary:
-          "Wildlife attractions are a safe way to learn about Top End animals, especially crocodiles.",
-        points: [
-          "Crocosaurus Cove in Darwin CBD helps students safely learn about saltwater crocodiles and Top End reptiles.",
-          "Crocodylus Park and Territory Wildlife Park are popular wildlife attractions around Darwin.",
-          "Never confuse tourist crocodile attractions with safe swimming in natural waterways.",
+          "Litchfield National Park is popular for waterfalls and nature trips.",
+          "Berry Springs is popular for day trips.",
+          "Kakadu National Park is a major Top End destination.",
+          "Check road access and weather before travelling.",
+          "Follow crocodile and swimming safety signs.",
         ],
       },
     ],

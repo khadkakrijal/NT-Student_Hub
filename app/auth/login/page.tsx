@@ -48,7 +48,7 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#12091f] px-6 pt-24">
+    <main className="flex min-h-screen items-center justify-center bg-gradient-to-b from-slate-900 to-blue-950 px-6 pt-24">
       <form
         onSubmit={handleLogin}
         className="w-full max-w-md rounded-3xl border border-violet-100/10 bg-white/[0.06] p-8 backdrop-blur-xl"

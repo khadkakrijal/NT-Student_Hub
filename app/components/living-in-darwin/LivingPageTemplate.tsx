@@ -16,14 +16,14 @@ export default function LivingPageTemplate({ page }: { page: LivingPage }) {
   const Icon = page.icon;
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32">
       <div className="mx-auto max-w-7xl">
         <Link
           href={livingBasePath}
           className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-violet-100/70 transition hover:text-fuchsia-300"
         >
           <ArrowLeft className="h-4 w-4" />
-          Back to Living in Darwin
+          Back to Student Guide
         </Link>
 
         <section className="relative overflow-hidden rounded-[2.5rem] border border-violet-100/10 bg-white/[0.06] p-8 backdrop-blur-xl md:p-12">
@@ -34,7 +34,7 @@ export default function LivingPageTemplate({ page }: { page: LivingPage }) {
             Living in Darwin
           </p>
 
-          <h1 className="relative mt-4 max-w-5xl text-5xl font-black leading-tight md:text-5xl">
+          <h1 className="relative mt-4 max-w-5xl text-2xl font-black leading-tight md:text-2xl">
             {page.title}
           </h1>
 

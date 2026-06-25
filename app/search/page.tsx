@@ -30,7 +30,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     results.guides.length;
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32 text-white">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32 text-white">
       <div className="mx-auto max-w-7xl">
         <section className="relative overflow-hidden rounded-[2.5rem] border border-violet-100/10 bg-white/[0.06] p-8 backdrop-blur-xl md:p-12">
           <div className="absolute right-[-100px] top-[-100px] h-80 w-80 rounded-full bg-fuchsia-500/20 blur-3xl" />
@@ -41,7 +41,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
             Search
           </p>
 
-          <h1 className="relative mt-4 text-5xl font-black md:text-5xl">
+          <h1 className="relative mt-4 text-2xl font-black md:text-2xl">
             Search NT Student Hub
           </h1>
 

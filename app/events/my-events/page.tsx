@@ -22,7 +22,7 @@ export default async function MyEventsPage() {
   const events = await getMyEvents();
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32">
       <div className="mx-auto max-w-7xl">
         <section className="relative overflow-hidden rounded-[2.5rem] border border-violet-100/10 bg-white/[0.06] p-8 backdrop-blur-xl md:p-10">
           <div className="absolute right-[-100px] top-[-100px] h-80 w-80 rounded-full bg-fuchsia-500/20 blur-3xl" />
@@ -33,7 +33,7 @@ export default async function MyEventsPage() {
                 My Events
               </p>
 
-              <h1 className="mt-3 text-4xl font-black md:text-5xl">
+              <h1 className="mt-3 text-2xl font-black md:text-2xl">
                 Manage Your Events
               </h1>
 
@@ -177,7 +177,7 @@ function StatCard({ label, value }: { label: string; value: number }) {
   return (
     <div className="rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-6 backdrop-blur-xl">
       <p className="text-sm text-violet-50/55">{label}</p>
-      <p className="mt-2 text-4xl font-black text-fuchsia-200">{value}</p>
+      <p className="mt-2 text-2xl font-black text-fuchsia-200">{value}</p>
     </div>
   );
 }
@@ -187,11 +187,13 @@ function StatusBadge({ status }: { status: string }) {
     status === "approved"
       ? "bg-emerald-400/15 text-emerald-200"
       : status === "rejected"
-      ? "bg-red-400/15 text-red-200"
-      : "bg-yellow-400/15 text-yellow-200";
+        ? "bg-red-400/15 text-red-200"
+        : "bg-yellow-400/15 text-yellow-200";
 
   return (
-    <span className={`rounded-full px-3 py-1 text-xs font-bold capitalize ${style}`}>
+    <span
+      className={`rounded-full px-3 py-1 text-xs font-bold capitalize ${style}`}
+    >
       {status}
     </span>
   );

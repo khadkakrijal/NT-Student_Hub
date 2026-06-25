@@ -38,7 +38,8 @@ export default function HomeFeaturedSection({
     featured.event && {
       title: featured.event.title,
       label: "Featured Event",
-      description: featured.event.location_name || featured.event.suburb || "Event",
+      description:
+        featured.event.location_name || featured.event.suburb || "Event",
       href: `/events/${featured.event.slug || featured.event.id}`,
       icon: CalendarDays,
     },
@@ -60,7 +61,7 @@ export default function HomeFeaturedSection({
   if (!items.length) return null;
 
   return (
-    <section className="px-6 py-20">
+    <section className="px-6 py-5">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10">
           <div className="inline-flex items-center gap-2 rounded-full border border-yellow-300/20 bg-yellow-300/10 px-4 py-2 text-sm font-bold text-yellow-200">
@@ -68,12 +69,13 @@ export default function HomeFeaturedSection({
             Featured This Week
           </div>
 
-          <h2 className="mt-4 text-4xl font-black md:text-5xl">
+          <h2 className="mt-4 text-2xl font-black md:text-2xl">
             Recommended for students.
           </h2>
 
           <p className="mt-4 max-w-2xl text-violet-50/70">
-            Hand-picked housing, jobs, events and discussions from NT Student Hub.
+            Hand-picked housing, jobs, events and discussions from NT Student
+            Hub.
           </p>
         </div>
 

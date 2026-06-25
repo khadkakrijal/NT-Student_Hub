@@ -2,7 +2,6 @@ import { Flag } from "lucide-react";
 import { getAllReportsForAdmin } from "@/app/api/apiServices/reportService";
 import AdminReportActions from "@/app/components/admin/AdminReportActions";
 
-
 export default async function AdminReportsPage() {
   const reports = await getAllReportsForAdmin();
 
@@ -17,7 +16,7 @@ export default async function AdminReportsPage() {
           Admin Reports
         </p>
 
-        <h1 className="relative mt-3 text-4xl font-black">Content Reports</h1>
+        <h1 className="relative mt-3 text-2xl font-black">Content Reports</h1>
 
         <p className="relative mt-3 max-w-2xl text-violet-50/70">
           Review reports submitted by users for housing, jobs, events and
@@ -109,7 +108,7 @@ function StatCard({ label, value }: { label: string; value: number }) {
   return (
     <div className="rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-6 backdrop-blur-xl">
       <p className="text-sm text-violet-50/55">{label}</p>
-      <p className="mt-2 text-4xl font-black text-red-200">{value}</p>
+      <p className="mt-2 text-2xl font-black text-red-200">{value}</p>
     </div>
   );
 }

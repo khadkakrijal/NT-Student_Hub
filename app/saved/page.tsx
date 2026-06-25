@@ -19,7 +19,7 @@ export default async function SavedPage() {
     saved.posts.length;
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32 text-white">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32 text-white">
       <div className="mx-auto max-w-7xl">
         <section className="rounded-[2.5rem] border border-violet-100/10 bg-white/[0.06] p-8 backdrop-blur-xl md:p-12">
           <Bookmark className="h-10 w-10 text-fuchsia-300" />
@@ -28,7 +28,7 @@ export default async function SavedPage() {
             Saved
           </p>
 
-          <h1 className="mt-4 text-5xl font-black">My Saved Items</h1>
+          <h1 className="mt-4 text-2xl font-black">My Saved Items</h1>
 
           <p className="mt-5 max-w-3xl text-violet-50/70">
             View accommodation, events, jobs and community posts you saved.

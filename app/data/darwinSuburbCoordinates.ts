@@ -21,7 +21,6 @@ export const darwinSuburbCoordinates: Record<string, [number, number]> = {
   "stuart park": [-12.4464, 130.842],
   bayview: [-12.4444, 130.8582],
   woolner: [-12.4391, 130.8507],
-  "the gardens": [-12.4458, 130.8344],
   palmerston: [-12.486, 130.983],
   driver: [-12.4865, 130.9716],
   gray: [-12.4902, 130.9821],

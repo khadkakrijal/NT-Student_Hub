@@ -27,7 +27,7 @@ export default function HomeWelcomeBack({ fullName, role, stats }: Props) {
   const firstName = fullName?.split(" ")[0] || "Student";
 
   return (
-    <section className="relative overflow-hidden px-6 py-14">
+    <section className="relative overflow-hidden px-6 py-5">
       <div className="absolute left-10 top-0 h-72 w-72 rounded-full bg-violet-500/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
@@ -45,7 +45,7 @@ export default function HomeWelcomeBack({ fullName, role, stats }: Props) {
                 Welcome back
               </div>
 
-              <h2 className="mt-5 text-4xl font-black">Hi {firstName} 👋</h2>
+              <h2 className="mt-5 text-2xl font-black">Hi {firstName} 👋</h2>
 
               <p className="mt-4 max-w-2xl leading-8 text-violet-50/70">
                 Continue exploring housing, jobs, events and student discussions
@@ -60,10 +60,25 @@ export default function HomeWelcomeBack({ fullName, role, stats }: Props) {
             </div>
 
             <div className="grid grid-cols-2 gap-4 lg:w-[480px]">
-              <StatLink href="/saved" icon={Bookmark} label="Saved" value={stats.saved} />
+              <StatLink
+                href="/saved"
+                icon={Bookmark}
+                label="Saved"
+                value={stats.saved}
+              />
               {/* <StatLink href="/notifications" icon={Bell} label="Unread" value={stats.unreadNotifications} /> */}
-              <StatLink href="/jobs" icon={Briefcase} label="Jobs" value={stats.jobs} />
-              <StatLink href="/events" icon={CalendarDays} label="Events" value={stats.events} />
+              <StatLink
+                href="/jobs"
+                icon={Briefcase}
+                label="Jobs"
+                value={stats.jobs}
+              />
+              <StatLink
+                href="/events"
+                icon={CalendarDays}
+                label="Events"
+                value={stats.events}
+              />
             </div>
           </div>
 
@@ -71,7 +86,11 @@ export default function HomeWelcomeBack({ fullName, role, stats }: Props) {
             <QuickLink href="/listings" icon={Home} title="Browse Housing" />
             <QuickLink href="/jobs" icon={Briefcase} title="Find Jobs" />
             <QuickLink href="/events" icon={CalendarDays} title="View Events" />
-            <QuickLink href="/community" icon={MessageCircle} title="Community" />
+            <QuickLink
+              href="/community"
+              icon={MessageCircle}
+              title="Community"
+            />
           </div>
         </motion.div>
       </div>

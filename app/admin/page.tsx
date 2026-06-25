@@ -30,7 +30,7 @@ export default async function AdminDashboardPage() {
             Admin
           </p>
 
-          <h1 className="mt-3 text-4xl font-black md:text-5xl">
+          <h1 className="mt-3 text-2xl font-black md:text-2xl">
             Admin Analytics
           </h1>
 
@@ -245,7 +245,7 @@ function AdminStatCard({
     >
       <Icon className="h-6 w-6 text-fuchsia-300" />
       <p className="mt-4 text-sm text-violet-50/60">{title}</p>
-      <h2 className="mt-2 text-4xl font-black">{value}</h2>
+      <h2 className="mt-2 text-2xl font-black">{value}</h2>
     </Link>
   );
 }

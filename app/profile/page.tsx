@@ -44,7 +44,7 @@ export default async function ProfilePage() {
   const firstName = profile?.full_name?.split(" ")[0] || "Student";
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-28 text-white">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-28 text-white">
       <div className="mx-auto max-w-7xl">
         <section className="relative overflow-hidden rounded-[2.5rem] border border-violet-100/10 bg-white/[0.06] p-8 backdrop-blur-xl md:p-12">
           <div className="absolute right-[-100px] top-[-100px] h-80 w-80 rounded-full bg-fuchsia-500/20 blur-3xl" />
@@ -59,7 +59,7 @@ export default async function ProfilePage() {
                 My Dashboard
               </p>
 
-              <h1 className="mt-3 text-4xl font-black md:text-5xl">
+              <h1 className="mt-3 text-2xl font-black md:text-2xl">
                 Welcome back, {firstName} 👋
               </h1>
 
@@ -208,7 +208,7 @@ function StatCard({
     >
       <Icon className="h-7 w-7 text-fuchsia-300" />
       <p className="mt-4 text-sm text-violet-50/60">{label}</p>
-      <p className="mt-2 text-4xl font-black text-white">{value}</p>
+      <p className="mt-2 text-2xl font-black text-white">{value}</p>
     </Link>
   );
 }

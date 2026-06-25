@@ -20,6 +20,8 @@ import RecentlyViewedTracker from "@/app/components/recently-viewed/RecentlyView
 import SaveButton from "@/app/components/favorites/SaveButton";
 import ShareButton from "@/app/components/share/ShareButton";
 import ReportButton from "@/app/components/reports/ReportButton";
+import { getNearestBusStopBySuburb } from "@/app/lib/gtfs";
+import NearbyTransportCard from "@/app/components/listings/NearbyTransportCard";
 
 type PageProps = {
   params: Promise<{
@@ -41,9 +43,10 @@ export default async function ListingDetailPage({ params }: PageProps) {
 
   const images = listing.listing_images || [];
   const savedListingIds = await getSavedItemIds("listing");
+  const nearbyTransport = await getNearestBusStopBySuburb(listing.suburb);
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32">
       <RecentlyViewedTracker
         item={{
           id: listing.id,
@@ -112,7 +115,7 @@ export default async function ListingDetailPage({ params }: PageProps) {
                 )}
               </div>
 
-              <h1 className="mt-5 text-4xl font-black md:text-5xl">
+              <h1 className="mt-5 text-2xl font-black md:text-2xl">
                 {listing.title}
               </h1>
 
@@ -230,7 +233,7 @@ export default async function ListingDetailPage({ params }: PageProps) {
                 </a>
               )}
             </div>
-
+            <NearbyTransportCard transport={nearbyTransport} />
             <div className="rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-6 backdrop-blur-xl">
               <h3 className="text-xl font-black">Safety reminder</h3>
 

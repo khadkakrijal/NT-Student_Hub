@@ -47,7 +47,7 @@ const items = [
 
 export default function HomePlatformStats({ stats }: Props) {
   return (
-    <section className="relative overflow-hidden px-6 py-20">
+    <section className="relative overflow-hidden px-6 py-5">
       <div className="absolute right-10 top-10 h-80 w-80 rounded-full bg-fuchsia-500/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
@@ -57,7 +57,7 @@ export default function HomePlatformStats({ stats }: Props) {
             Platform Activity
           </div>
 
-          <h2 className="mt-4 text-4xl font-black md:text-5xl">
+          <h2 className="mt-4 text-2xl font-black md:text-2xl">
             Built for NT students.
           </h2>
 
@@ -81,9 +81,7 @@ export default function HomePlatformStats({ stats }: Props) {
               >
                 <item.icon className="h-8 w-8 text-fuchsia-300" />
 
-                <p className="mt-5 text-5xl font-black text-white">
-                  {value}
-                </p>
+                <p className="mt-5 text-2xl font-black text-white">{value}</p>
 
                 <h3 className="mt-3 text-xl font-black">{item.label}</h3>
 

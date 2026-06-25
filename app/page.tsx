@@ -26,7 +26,7 @@ export default async function Home() {
   const recommendations = await getPersonalizedRecommendations();
 
   return (
-    <main className="bg-[#12091f]">
+    <main className="bg-gradient-to-b from-slate-900 to-blue-950">
       <GuideWelcomeDialog />
       <HeroSection />
       <HomeFeaturedBanner banners={banners} />

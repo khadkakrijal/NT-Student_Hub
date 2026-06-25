@@ -21,7 +21,7 @@ export default function HomeRecentlyAdded({
   recentlyAdded: RecentlyAdded;
 }) {
   return (
-    <section className="relative overflow-hidden px-6 py-20">
+    <section className="relative overflow-hidden px-6 py-5">
       <div className="absolute left-0 top-20 h-80 w-80 rounded-full bg-violet-500/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
@@ -31,7 +31,7 @@ export default function HomeRecentlyAdded({
             Recently Added
           </div>
 
-          <h2 className="mt-4 text-4xl font-black md:text-5xl">
+          <h2 className="mt-4 text-2xl font-black md:text-2xl">
             New on NT Student Hub.
           </h2>
 
@@ -73,7 +73,8 @@ export default function HomeRecentlyAdded({
             items={recentlyAdded.events.map((item) => ({
               id: item.id,
               title: item.title,
-              subtitle: item.location_name || item.suburb || item.category || "Event",
+              subtitle:
+                item.location_name || item.suburb || item.category || "Event",
               href: `/events/${item.slug || item.id}`,
             }))}
           />

@@ -54,7 +54,7 @@ const guideSections = [
 
 export default function HomeGuideSections() {
   return (
-    <section className="relative overflow-hidden px-6 py-20">
+    <section className="relative overflow-hidden px-6 py-5">
       <div className="absolute right-0 top-20 h-80 w-80 rounded-full bg-fuchsia-500/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
@@ -64,7 +64,7 @@ export default function HomeGuideSections() {
               Living in Darwin
             </p>
 
-            <h2 className="mt-3 text-4xl font-black md:text-5xl">
+            <h2 className="mt-3 text-2xl font-black md:text-2xl">
               Everything international students should know before moving to
               Darwin.
             </h2>

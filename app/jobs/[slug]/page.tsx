@@ -44,7 +44,7 @@ export default async function JobDetailPage({ params }: PageProps) {
       : job.visa_type || null;
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32">
       <RecentlyViewedTracker
         item={{
           id: job.id,
@@ -74,7 +74,7 @@ export default async function JobDetailPage({ params }: PageProps) {
               Job Opportunity
             </p>
 
-            <h1 className="mt-4 text-5xl font-black leading-tight md:text-6xl">
+            <h1 className="mt-4 text-2xl font-black leading-tight md:text-2xl">
               {job.title}
             </h1>
 

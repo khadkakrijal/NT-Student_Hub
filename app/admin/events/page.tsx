@@ -14,7 +14,7 @@ export default async function AdminEventsPage() {
           Admin Events
         </p>
 
-        <h1 className="mt-3 text-4xl font-black">Events Management</h1>
+        <h1 className="mt-3 text-2xl font-black">Events Management</h1>
 
         <p className="mt-3 text-violet-50/70">
           Approve, reject, review, and manage student-submitted events.
@@ -155,7 +155,7 @@ function StatCard({ label, value }: { label: string; value: number }) {
   return (
     <div className="rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-6 backdrop-blur-xl">
       <p className="text-sm text-violet-50/55">{label}</p>
-      <p className="mt-2 text-4xl font-black text-fuchsia-200">{value}</p>
+      <p className="mt-2 text-2xl font-black text-fuchsia-200">{value}</p>
     </div>
   );
 }

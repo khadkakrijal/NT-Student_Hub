@@ -31,7 +31,7 @@ export default function HomeRecommendations({
   const suburbText = recommendations.suburbs.slice(0, 3).join(", ");
 
   return (
-    <section className="relative overflow-hidden px-6 py-20">
+    <section className="relative overflow-hidden px-6 py-5">
       <div className="absolute right-0 top-20 h-80 w-80 rounded-full bg-fuchsia-500/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
@@ -41,7 +41,7 @@ export default function HomeRecommendations({
             Recommended for you
           </div>
 
-          <h2 className="mt-4 text-4xl font-black md:text-5xl">
+          <h2 className="mt-4 text-2xl font-black md:text-2xl">
             Based on your saved housing.
           </h2>
 
@@ -134,9 +134,7 @@ function RecommendationColumn({
           >
             <p className="line-clamp-2 font-bold text-white">{item.title}</p>
 
-            <p className="mt-2 text-sm text-violet-50/60">
-              {item.subtitle}
-            </p>
+            <p className="mt-2 text-sm text-violet-50/60">{item.subtitle}</p>
 
             <p className="mt-3 inline-flex items-center gap-2 text-xs font-bold text-fuchsia-300">
               Open <ArrowRight className="h-3 w-3" />

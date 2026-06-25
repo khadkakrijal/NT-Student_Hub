@@ -19,7 +19,7 @@ export default async function AdminBannersPage() {
               Admin Banners
             </p>
 
-            <h1 className="mt-3 text-4xl font-black">Homepage Banners</h1>
+            <h1 className="mt-3 text-2xl font-black">Homepage Banners</h1>
 
             <p className="mt-3 max-w-2xl text-violet-50/70">
               Create and manage featured homepage announcements shown to

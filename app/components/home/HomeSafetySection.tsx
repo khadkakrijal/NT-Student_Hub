@@ -12,7 +12,7 @@ const safetyTips = [
 
 export default function HomeSafetySection() {
   return (
-    <section className="relative overflow-hidden px-6 py-20">
+    <section className="relative overflow-hidden px-6 py-5">
       <div className="absolute left-0 top-20 h-80 w-80 rounded-full bg-violet-500/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl rounded-[2.5rem] border border-violet-100/10 bg-white/[0.06] p-8 backdrop-blur-xl md:p-12">
@@ -22,7 +22,7 @@ export default function HomeSafetySection() {
             <p className="mt-5 text-sm font-semibold uppercase tracking-[0.3em] text-fuchsia-300">
               Student Safety
             </p>
-            <h2 className="mt-3 text-4xl font-black md:text-5xl">
+            <h2 className="mt-3 text-2xl font-black md:text-2xl">
               Safer than random social media posts.
             </h2>
             <p className="mt-5 text-lg leading-8 text-violet-50/70">

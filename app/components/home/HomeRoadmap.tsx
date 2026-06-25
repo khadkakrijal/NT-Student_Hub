@@ -6,7 +6,8 @@ import { Briefcase, CalendarDays, Map, ShoppingBag } from "lucide-react";
 const roadmap = [
   {
     title: "Student Jobs",
-    description: "Casual work, hospitality jobs, resume tips and employer posts.",
+    description:
+      "Casual work, hospitality jobs, resume tips and employer posts.",
     icon: Briefcase,
   },
   {
@@ -16,25 +17,27 @@ const roadmap = [
   },
   {
     title: "Events",
-    description: "Student events, cultural programs, sports and community gatherings.",
+    description:
+      "Student events, cultural programs, sports and community gatherings.",
     icon: CalendarDays,
   },
   {
     title: "Map View",
-    description: "Browse accommodation by suburb, campus distance and transport access.",
+    description:
+      "Browse accommodation by suburb, campus distance and transport access.",
     icon: Map,
   },
 ];
 
 export default function HomeRoadmap() {
   return (
-    <section className="px-6 py-20">
+    <section className="px-6 py-5">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-fuchsia-300">
             What’s next
           </p>
-          <h2 className="mt-3 text-4xl font-black md:text-5xl">
+          <h2 className="mt-3 text-2xl font-black md:text-2xl">
             Built to grow with NT students.
           </h2>
         </div>

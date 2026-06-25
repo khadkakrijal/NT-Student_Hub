@@ -52,13 +52,65 @@ export default function Navbar() {
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileSearch, setMobileSearch] = useState("");
+  const [openMobileGuide, setOpenMobileGuide] = useState(false);
   const [loading, setLoading] = useState(true);
 
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   const notificationRef = useRef<HTMLDivElement | null>(null);
 
   const navItems = [
-    { label: "Living in Darwin", href: "/living-in-darwin" },
+    {
+      label: "Student Guide",
+      href: "/living-in-darwin",
+      children: [
+        {
+          label: "About Darwin",
+          href: "/living-in-darwin/about-darwin",
+        },
+        {
+          label: "Bus Routes & Transport",
+          href: "/living-in-darwin/bus-routes",
+        },
+        {
+          label: "Health Insurance (OSHC)",
+          href: "/living-in-darwin/health-insurance",
+        },
+        {
+          label: "Medical Clinics & GP",
+          href: "/living-in-darwin/medical-clinics",
+        },
+        {
+          label: "Weather & Seasons",
+          href: "/living-in-darwin/weather",
+        },
+        {
+          label: "Education & Universities",
+          href: "/living-in-darwin/education",
+        },
+        {
+          label: "Banking & TFN",
+          href: "/living-in-darwin/banking-and-tfn",
+        },
+
+        {
+          label: "Things To Do",
+          href: "/living-in-darwin/things-to-do",
+        },
+        {
+          label: "Nepalese Community Clubs",
+          href: "/living-in-darwin/community-clubs",
+        },
+        {
+          label: "Education & Migration Services",
+          href: "/living-in-darwin/education-agencies",
+        },
+        {
+          label: "Important Contacts",
+          href: "/living-in-darwin/important-contacts",
+        },
+      ],
+    },
+
     { label: "Housing", href: "/listings" },
     { label: "Jobs", href: "/jobs" },
     { label: "Community", href: "/community" },
@@ -229,7 +281,7 @@ export default function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="fixed left-0 top-0 z-50 w-full border-b border-violet-200/10 bg-[#12091f]/70 backdrop-blur-xl"
+      className="fixed left-0 top-0 z-50 w-full border-b border-violet-200/10 bg-gradient-to-b from-slate-900 to-blue-950/70 backdrop-blur-xl"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 md:px-6">
         <Link href="/" className="flex shrink-0 items-center gap-3">
@@ -253,24 +305,37 @@ export default function Navbar() {
               pathname === item.href || pathname.startsWith(`${item.href}/`);
 
             return (
-              <motion.div key={item.label} whileHover={{ y: -2 }}>
+              <motion.div
+                key={item.label}
+                whileHover={{ y: -2 }}
+                className="group relative"
+              >
                 <Link
                   href={item.href}
-                  className={`relative flex items-center justify-center rounded-2xl px-3 py-3 text-xs font-bold uppercase tracking-[0.12em] transition-all duration-300 ${
+                  className={`relative flex items-center gap-1 rounded-2xl px-3 py-3 text-xs font-bold uppercase tracking-[0.12em] transition-all duration-300 ${
                     isActive
-                      ? "border border-fuchsia-300/30 bg-gradient-to-r from-violet-500/15 to-fuchsia-500/15 text-fuchsia-100 shadow-lg shadow-fuchsia-500/10"
+                      ? "border border-fuchsia-300/30 bg-gradient-to-r from-violet-500/15 to-fuchsia-500/15 text-fuchsia-100"
                       : "border border-transparent text-violet-100/75 hover:border-violet-100/10 hover:bg-white/10 hover:text-white"
                   }`}
                 >
-                  <span>{item.label}</span>
+                  {item.label}
 
-                  {isActive && (
-                    <motion.div
-                      layoutId="active-nav-dot"
-                      className="absolute bottom-1 left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-fuchsia-300 shadow-[0_0_15px_rgba(244,114,182,0.9)]"
-                    />
-                  )}
+                  {item.children && <ChevronDown className="h-3 w-3" />}
                 </Link>
+
+                {item.children && (
+                  <div className="invisible absolute left-0 top-full z-50 mt-2 w-80 rounded-3xl border border-violet-100/10 bg-gradient-to-b from-slate-900/95 to-blue-950/95 p-3 opacity-0 shadow-2xl backdrop-blur-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block rounded-2xl px-4 py-3 text-sm font-medium text-violet-100/80 transition hover:bg-white/10 hover:text-white"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </motion.div>
             );
           })}
@@ -314,20 +379,16 @@ export default function Navbar() {
               <div className="relative hidden md:block" ref={dropdownRef}>
                 <button
                   onClick={() => setIsDropdownOpen((prev) => !prev)}
-                  className="flex items-center gap-3 rounded-full border border-violet-100/10 bg-white/10 px-3 py-2 text-sm text-white backdrop-blur transition hover:bg-white/15"
+                  className="cursor-pointer flex items-center gap-2 rounded-full border border-violet-100/10 bg-white/10 px-2 py-2 text-sm text-white backdrop-blur transition hover:bg-white/15"
+                  title={profile.full_name || "User"}
                 >
                   <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-violet-400 to-fuchsia-400 text-sm font-black text-[#160524]">
                     {initials}
                   </div>
 
-                  <div className="hidden text-left md:block">
-                    <p className="max-w-32 truncate text-sm font-semibold uppercase">
-                      {profile.full_name || "User"}
-                    </p>
-                    <p className="text-xs capitalize text-violet-200/70">
-                      {profile.role}
-                    </p>
-                  </div>
+                  <span className="hidden rounded-full bg-violet-400/15 px-2.5 py-1 text-[11px] font-bold capitalize text-fuchsia-200 xl:inline-flex">
+                    {profile.role}
+                  </span>
 
                   <ChevronDown className="h-4 w-4 text-violet-100/80" />
                 </button>
@@ -363,7 +424,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -14 }}
             transition={{ duration: 0.2 }}
-            className="border-t border-violet-100/10 bg-[#12091f]/95 px-4 pb-5 pt-4 backdrop-blur-xl lg:hidden"
+            className="border-t border-violet-100/10 bg-gradient-to-b from-slate-900 to-blue-950/95 px-4 pb-5 pt-4 backdrop-blur-xl lg:hidden"
           >
             <form onSubmit={handleMobileSearch} className="mb-4">
               <div className="flex items-center rounded-2xl border border-violet-100/10 bg-white/[0.06] px-4">
@@ -383,6 +444,40 @@ export default function Navbar() {
                 const isActive =
                   pathname === item.href ||
                   pathname.startsWith(`${item.href}/`);
+
+                if (item.children) {
+                  return (
+                    <div key={item.label}>
+                      <button
+                        onClick={() => setOpenMobileGuide(!openMobileGuide)}
+                        className="flex w-full items-center justify-between rounded-2xl px-4 py-3 text-left text-sm font-bold text-violet-50"
+                      >
+                        {item.label}
+
+                        <ChevronDown
+                          className={`h-4 w-4 transition ${
+                            openMobileGuide ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+
+                      {openMobileGuide && (
+                        <div className="ml-4 mt-2 space-y-1">
+                          {item.children.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              onClick={() => setIsMobileMenuOpen(false)}
+                              className="block rounded-xl px-4 py-2 text-sm text-violet-100/80 hover:bg-white/10"
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
 
                 return (
                   <Link
@@ -635,7 +730,7 @@ function UserDropdown({
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 12, scale: 0.96 }}
           transition={{ duration: 0.18 }}
-          className="absolute right-0 mt-3 w-72 overflow-hidden rounded-3xl border border-violet-100/10 bg-[#1d0f33]/95 p-2 shadow-2xl shadow-black/30 backdrop-blur-xl"
+          className="absolute right-0 mt-3 w-72 overflow-hidden rounded-3xl border border-violet-100/10 bg-gradient-to-b from-slate-900/95 to-blue-950/95 p-2 shadow-2xl shadow-black/30 backdrop-blur-xl"
         >
           <div className="border-b border-white/10 px-4 py-3">
             <p className="font-semibold">{profile.full_name || "User"}</p>

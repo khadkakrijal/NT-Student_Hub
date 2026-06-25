@@ -65,7 +65,7 @@ const miniCards: { icon: LucideIcon; label: string }[] = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#12091f]">
+    <section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-slate-900 to-blue-950">
       <motion.div
         initial={{ scale: 1.08 }}
         animate={{ scale: 1 }}
@@ -102,7 +102,7 @@ export default function HeroSection() {
             Built for students starting life in Darwin
           </div>
 
-          <h1 className="max-w-5xl text-5xl font-black leading-[1.04] tracking-tight md:text-6xl">
+          <h1 className="max-w-5xl text-2xl font-black leading-[1.04] tracking-tight md:text-2xl">
             Your student starting point for{" "}
             <span className="bg-gradient-to-r from-violet-200 via-fuchsia-300 to-pink-200 bg-clip-text text-transparent">
               Darwin and the NT.
@@ -168,12 +168,8 @@ export default function HeroSection() {
             <div className="rounded-[1.5rem] bg-[#180b2b]/90 p-6">
               <div className="mb-6 flex items-center justify-between">
                 <div>
-                  <p className="text-sm text-violet-200/65">
-                    NT Student Hub
-                  </p>
-                  <h3 className="text-2xl font-bold">
-                    One place to begin
-                  </h3>
+                  <p className="text-sm text-violet-200/65">NT Student Hub</p>
+                  <h3 className="text-2xl font-bold">One place to begin</h3>
                 </div>
 
                 <div className="rounded-full bg-violet-300 px-4 py-2 text-sm font-bold text-[#160524]">
@@ -198,9 +194,7 @@ export default function HeroSection() {
               </div>
 
               <div className="mt-5 rounded-3xl bg-gradient-to-r from-violet-300 to-fuchsia-300 p-5 text-[#160524]">
-                <p className="font-black">
-                  More than accommodation.
-                </p>
+                <p className="font-black">More than accommodation.</p>
                 <p className="mt-1 text-sm font-medium">
                   A practical hub for housing, events, community advice and
                   student life in Darwin.

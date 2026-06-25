@@ -75,7 +75,9 @@ export default function MyListingsSection({ listings }: { listings: any[] }) {
                         <p className="flex items-center gap-2">
                           <CalendarDays className="h-4 w-4 text-fuchsia-300" />
                           {listing.available_from
-                            ? new Date(listing.available_from).toLocaleDateString()
+                            ? new Date(
+                                listing.available_from,
+                              ).toLocaleDateString()
                             : "Flexible availability"}
                         </p>
 
@@ -149,7 +151,7 @@ function StatCard({ label, value }: { label: string; value: number }) {
   return (
     <div className="rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-6 backdrop-blur-xl">
       <p className="text-sm text-violet-50/55">{label}</p>
-      <p className="mt-2 text-4xl font-black text-fuchsia-200">{value}</p>
+      <p className="mt-2 text-2xl font-black text-fuchsia-200">{value}</p>
     </div>
   );
 }
@@ -163,7 +165,9 @@ function StatusBadge({ status }: { status: string }) {
         : "bg-yellow-400/15 text-yellow-200";
 
   return (
-    <span className={`rounded-full px-3 py-1 text-xs font-bold capitalize backdrop-blur ${style}`}>
+    <span
+      className={`rounded-full px-3 py-1 text-xs font-bold capitalize backdrop-blur ${style}`}
+    >
       {status}
     </span>
   );

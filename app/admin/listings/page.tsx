@@ -19,7 +19,7 @@ export default async function ListingsPage() {
   const isAdmin = profile?.role === "admin";
 
   return (
-    <main className=" bg-[#12091f] px-6 pb-16 ">
+    <main className=" bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-16 ">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
@@ -27,7 +27,7 @@ export default async function ListingsPage() {
               Housing
             </p>
 
-            <h1 className="mt-3 text-4xl font-black">Student Accommodation</h1>
+            <h1 className="mt-3 text-2xl font-black">Student Accommodation</h1>
 
             <p className="mt-3 max-w-2xl text-violet-50/70">
               {isAdmin

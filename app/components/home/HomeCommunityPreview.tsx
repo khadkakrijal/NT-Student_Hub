@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function HomeCommunityPreview({ posts }: { posts: any[] }) {
   return (
-    <section className="relative overflow-hidden px-6 py-20">
+    <section className="relative overflow-hidden px-6 py-5">
       <div className="absolute right-0 top-20 h-80 w-80 rounded-full bg-fuchsia-500/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
@@ -15,7 +15,7 @@ export default function HomeCommunityPreview({ posts }: { posts: any[] }) {
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-fuchsia-300">
               Community
             </p>
-            <h2 className="mt-3 text-4xl font-black md:text-5xl">
+            <h2 className="mt-3 text-2xl font-black md:text-2xl">
               Ask questions before you arrive
             </h2>
             <p className="mt-4 max-w-2xl text-violet-50/70">

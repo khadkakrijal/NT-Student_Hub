@@ -19,7 +19,7 @@ export default function EventsViewClient({
   const [view, setView] = useState<"all" | "mine">("all");
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32">
       <div className="mx-auto max-w-7xl">
         <section className="relative overflow-hidden rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-8 backdrop-blur-xl md:p-10">
           <div className="absolute right-[-80px] top-[-80px] h-64 w-64 rounded-full bg-fuchsia-500/20 blur-3xl" />
@@ -31,7 +31,7 @@ export default function EventsViewClient({
                 {view === "mine" ? "Event Panel" : "Events"}
               </p>
 
-              <h1 className="mt-3 text-4xl font-black md:text-5xl">
+              <h1 className="mt-3 text-2xl font-black md:text-2xl">
                 {view === "mine" ? "My Events" : "Discover Events"}
               </h1>
 

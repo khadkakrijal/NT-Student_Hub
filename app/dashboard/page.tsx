@@ -21,7 +21,7 @@ export default async function DashboardPage() {
     .single();
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pt-32">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pt-32">
       <div className="mx-auto max-w-6xl">
         <div className="rounded-3xl border border-violet-100/10 bg-white/[0.06] p-8 backdrop-blur-xl">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
@@ -30,7 +30,7 @@ export default async function DashboardPage() {
                 Dashboard
               </p>
 
-              <h1 className="mt-3 text-4xl font-black">
+              <h1 className="mt-3 text-2xl font-black">
                 Welcome, {profile?.full_name || user.email}
               </h1>
 

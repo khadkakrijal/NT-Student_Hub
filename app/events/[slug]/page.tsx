@@ -47,7 +47,7 @@ export default async function EventDetailPage({ params }: PageProps) {
   const interestCount = event.event_interests?.length || 0;
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32">
       <RecentlyViewedTracker
         item={{
           id: event.id,
@@ -90,7 +90,7 @@ export default async function EventDetailPage({ params }: PageProps) {
           </div>
 
           <div className="p-8 md:p-10">
-            <h1 className="text-5xl font-black leading-tight md:text-6xl">
+            <h1 className="text-2xl font-black leading-tight md:text-2xl">
               {event.title}
             </h1>
 

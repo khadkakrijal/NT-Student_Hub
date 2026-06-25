@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Navbar from "./Navbar";
+import FeedbackWidget from "./feedback/FeedbackWidget";
 
 export default function MainLayoutWrapper({
   children,
@@ -16,6 +17,7 @@ export default function MainLayoutWrapper({
     <>
       {!isAdminRoute && <Navbar />}
       {children}
+        <FeedbackWidget />
     </>
   );
 }

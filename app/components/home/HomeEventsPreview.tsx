@@ -7,14 +7,14 @@ import { motion } from "framer-motion";
 
 export default function HomeEventsPreview({ events }: { events: any[] }) {
   return (
-    <section className="px-6 py-20">
+    <section className="px-6 py-5">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-fuchsia-300">
               Events
             </p>
-            <h2 className="mt-3 text-4xl font-black md:text-5xl">
+            <h2 className="mt-3 text-2xl font-black md:text-2xl">
               What’s happening around Darwin
             </h2>
             <p className="mt-4 max-w-2xl text-violet-50/70">

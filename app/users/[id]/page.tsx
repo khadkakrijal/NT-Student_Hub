@@ -59,7 +59,7 @@ export default async function PublicUserProfilePage({ params }: PageProps) {
   const firstName = profile.full_name?.split(" ")[0] || "Student";
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32 text-white">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32 text-white">
       <div className="mx-auto max-w-7xl">
         <Link
           href="/community"
@@ -81,7 +81,7 @@ export default async function PublicUserProfilePage({ params }: PageProps) {
               Public Profile
             </p>
 
-            <h1 className="mt-3 text-5xl font-black">
+            <h1 className="mt-3 text-2xl font-black">
               {profile.full_name || "Student"}
             </h1>
 
@@ -100,7 +100,11 @@ export default async function PublicUserProfilePage({ params }: PageProps) {
         </section>
 
         <section className="mt-8 grid gap-5 md:grid-cols-3">
-          <StatCard icon={MessageCircle} label="Community Posts" value={posts.length} />
+          <StatCard
+            icon={MessageCircle}
+            label="Community Posts"
+            value={posts.length}
+          />
           <StatCard icon={PartyPopper} label="Events" value={events.length} />
           <StatCard icon={Home} label="Listings" value={listings.length} />
         </section>
@@ -160,7 +164,7 @@ function StatCard({
     <div className="rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-6 backdrop-blur-xl">
       <Icon className="h-7 w-7 text-fuchsia-300" />
       <p className="mt-4 text-sm text-violet-50/60">{label}</p>
-      <p className="mt-2 text-4xl font-black">{value}</p>
+      <p className="mt-2 text-2xl font-black">{value}</p>
     </div>
   );
 }

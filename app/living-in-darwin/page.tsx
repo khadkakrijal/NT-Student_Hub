@@ -30,7 +30,7 @@ export default function LivingInDarwinPage() {
   const remainingPages = livingPages.slice(4);
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32 text-white">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32 text-white">
       <div className="mx-auto max-w-7xl">
         <section className="relative overflow-hidden rounded-[2.5rem] border border-violet-100/10 bg-white/[0.06] p-8 backdrop-blur-xl md:p-12">
           <div className="absolute right-[-100px] top-[-100px] h-80 w-80 rounded-full bg-fuchsia-500/20 blur-3xl" />
@@ -47,7 +47,7 @@ export default function LivingInDarwinPage() {
                 Living in Darwin
               </p>
 
-              <h1 className="mt-4 max-w-5xl text-5xl font-black leading-tight md:text-6xl">
+              <h1 className="mt-4 max-w-5xl text-2xl font-black leading-tight md:text-2xl">
                 Understand Darwin before you choose a room, job or suburb.
               </h1>
 
@@ -105,7 +105,7 @@ export default function LivingInDarwinPage() {
               className="rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-6 backdrop-blur-xl"
             >
               <p className="text-sm text-violet-50/55">{item.label}</p>
-              <p className="mt-2 text-4xl font-black text-fuchsia-200">
+              <p className="mt-2 text-2xl font-black text-fuchsia-200">
                 {item.value}
               </p>
             </div>
@@ -118,7 +118,7 @@ export default function LivingInDarwinPage() {
               Most important first
             </p>
 
-            <h2 className="mt-3 text-4xl font-black">
+            <h2 className="mt-3 text-2xl font-black">
               Read these before choosing accommodation
             </h2>
 
@@ -204,7 +204,7 @@ export default function LivingInDarwinPage() {
                 Student checklist
               </p>
 
-              <h2 className="mt-3 text-4xl font-black">
+              <h2 className="mt-3 text-2xl font-black">
                 Before you move into a room
               </h2>
 
@@ -227,7 +227,7 @@ export default function LivingInDarwinPage() {
             <div>
               <Star className="h-10 w-10 text-fuchsia-300" />
 
-              <h2 className="mt-5 text-4xl font-black">
+              <h2 className="mt-5 text-2xl font-black">
                 After reading the guide, compare real housing.
               </h2>
 

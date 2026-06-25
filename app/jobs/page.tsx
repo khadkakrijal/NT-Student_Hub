@@ -8,7 +8,7 @@ export default async function JobsPage() {
   const savedJobIds = await getSavedItemIds("job");
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32">
       <div className="mx-auto max-w-7xl">
         <section className="relative overflow-hidden rounded-[2.5rem] border border-violet-100/10 bg-white/[0.06] p-8 backdrop-blur-xl md:p-12">
           <div className="absolute right-[-100px] top-[-100px] h-80 w-80 rounded-full bg-fuchsia-500/20 blur-3xl" />
@@ -19,7 +19,7 @@ export default async function JobsPage() {
             Student Jobs
           </p>
 
-          <h1 className="relative mt-4 max-w-5xl text-5xl font-black leading-tight md:text-5xl">
+          <h1 className="relative mt-4 max-w-5xl text-2xl font-black leading-tight md:text-2xl">
             Find student-friendly jobs in Darwin and the NT.
           </h1>
 

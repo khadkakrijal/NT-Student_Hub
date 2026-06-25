@@ -23,7 +23,7 @@ export default async function AdminJobsPage() {
             Admin Jobs
           </p>
 
-          <h1 className="mt-3 text-4xl font-black">Jobs Management</h1>
+          <h1 className="mt-3 text-2xl font-black">Jobs Management</h1>
 
           <p className="mt-3 text-violet-50/70">
             Post and manage student-friendly jobs in Darwin and the NT.

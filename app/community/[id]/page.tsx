@@ -35,7 +35,7 @@ export default async function CommunityPostDetailPage({ params }: PageProps) {
   const savedCommunityIds = await getSavedItemIds("community");
 
   return (
-    <main className="min-h-screen bg-[#12091f] px-6 pb-20 pt-32">
+    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-32">
       <RecentlyViewedTracker
         item={{
           id: post.id,
@@ -66,9 +66,7 @@ export default async function CommunityPostDetailPage({ params }: PageProps) {
             </span>
           )}
 
-          <h1 className="mt-5 text-4xl font-black md:text-4xl">
-            {post.title}
-          </h1>
+          <h1 className="mt-5 text-2xl font-black md:text-2xl">{post.title}</h1>
 
           <p className="mt-3 text-sm text-violet-50/55">
             Posted by{" "}

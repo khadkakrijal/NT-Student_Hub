@@ -24,7 +24,7 @@ export default async function AdminLayout({
   if (profile?.role !== "admin") redirect("/dashboard");
 
   return (
-    <div className="min-h-screen bg-[#12091f]">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950">
       <AdminSidebar />
 
       <main className="px-6 py-10 lg:ml-72 lg:px-10">{children}</main>

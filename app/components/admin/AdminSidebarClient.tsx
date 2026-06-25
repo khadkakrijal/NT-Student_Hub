@@ -115,7 +115,7 @@ export default function AdminSidebarClient({
   }
 
   return (
-    <aside className="fixed left-0 top-0 z-40 hidden h-screen w-72 border-r border-violet-100/10 bg-[#12091f]/95 px-5 py-6 backdrop-blur-xl lg:block">
+    <aside className="fixed left-0 top-0 z-40 hidden h-screen w-72 border-r border-violet-100/10 bg-gradient-to-b from-slate-900 to-blue-950/95 px-5 py-6 backdrop-blur-xl lg:block">
       <Link href="/" className="mb-10 flex items-center gap-3">
         <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 shadow-lg">
           <ShieldCheck className="h-6 w-6 text-white" />
