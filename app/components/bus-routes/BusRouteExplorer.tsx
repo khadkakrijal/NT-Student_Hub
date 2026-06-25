@@ -43,8 +43,7 @@ export default function BusRouteExplorer({
       L.Icon.Default.mergeOptions({
         iconRetinaUrl:
           "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-        iconUrl:
-          "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+        iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
         shadowUrl:
           "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
       });
@@ -64,7 +63,9 @@ export default function BusRouteExplorer({
   const selectedRoute = routes.find((r) => r.route_id === selectedRouteId);
 
   const visibleStops = useMemo(() => {
-    const baseStops = selectedRouteId ? routeStops[selectedRouteId] || [] : stops;
+    const baseStops = selectedRouteId
+      ? routeStops[selectedRouteId] || []
+      : stops;
     const q = search.trim().toLowerCase();
 
     const filtered = q
@@ -78,7 +79,9 @@ export default function BusRouteExplorer({
     return selectedRouteId ? filtered : filtered.slice(0, 500);
   }, [search, selectedRouteId, routeStops, stops]);
 
-  const selectedShape = selectedRouteId ? routeShapes[selectedRouteId] || [] : [];
+  const selectedShape = selectedRouteId
+    ? routeShapes[selectedRouteId] || []
+    : [];
 
   if (!LeafletMap) {
     return (
@@ -92,23 +95,23 @@ export default function BusRouteExplorer({
 
   return (
     <div className="space-y-6">
-      <section className="rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-5 backdrop-blur-xl">
-        <div className="grid gap-4 lg:grid-cols-[1fr_320px]">
-          <div className="relative">
+      <section className="w-full overflow-hidden rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-4 backdrop-blur-xl sm:p-5">
+        <div className="grid w-full min-w-0 gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,320px)]">
+          <div className="relative min-w-0">
             <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-fuchsia-300" />
 
             <input
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search stop name or stop ID..."
-              className="w-full rounded-2xl border border-violet-100/10 bg-white/[0.06] px-11 py-4 text-sm text-white outline-none placeholder:text-violet-100/45"
+              className="w-full min-w-0 rounded-2xl border border-violet-100/10 bg-white/[0.06] px-11 py-4 text-sm text-white outline-none placeholder:text-violet-100/45"
             />
           </div>
 
           <select
             value={selectedRouteId}
             onChange={(e) => setSelectedRouteId(e.target.value)}
-            className="rounded-2xl border border-violet-100/10 bg-slate-900 px-4 py-4 text-sm font-semibold text-white outline-none"
+            className="w-full min-w-0 rounded-2xl border border-violet-100/10 bg-slate-900 px-4 py-4 text-sm font-semibold text-white outline-none"
           >
             <option value="">All stops</option>
             {routes.map((route) => (
@@ -120,7 +123,7 @@ export default function BusRouteExplorer({
           </select>
         </div>
 
-        <div className="mt-5 grid gap-4 md:grid-cols-3">
+        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <StatCard label="Visible stops" value={visibleStops.length} />
           <StatCard label="Total routes" value={routes.length} />
           <StatCard
@@ -181,9 +184,9 @@ export default function BusRouteExplorer({
             />
           )}
 
-          {visibleStops.map((stop) => (
+          {visibleStops.map((stop, index) => (
             <Marker
-              key={`${selectedRouteId || "all"}-${stop.stop_id}`}
+              key={`${selectedRouteId || "all"}-${stop.stop_id}-${index}`}
               position={[Number(stop.stop_lat), Number(stop.stop_lon)]}
             >
               <Popup>
@@ -193,8 +196,7 @@ export default function BusRouteExplorer({
                   {selectedRoute && (
                     <p>
                       Route:{" "}
-                      {selectedRoute.route_short_name ||
-                        selectedRoute.route_id}
+                      {selectedRoute.route_short_name || selectedRoute.route_id}
                     </p>
                   )}
                 </div>
@@ -205,9 +207,9 @@ export default function BusRouteExplorer({
       </div>
 
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {visibleStops.slice(0, 12).map((stop) => (
+        {visibleStops.slice(0, 12).map((stop, index) => (
           <div
-            key={stop.stop_id}
+            key={`${stop.stop_id}-${index}`}
             className="rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-5 backdrop-blur-xl"
           >
             <MapPin className="h-6 w-6 text-fuchsia-300" />
