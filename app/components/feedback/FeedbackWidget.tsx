@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { MessageSquareText, X, HeartHandshake } from "lucide-react";
+import { MessageSquareText, X } from "lucide-react";
 import Swal from "sweetalert2";
 import { createClient } from "@/app/lib/supabase/client";
 
@@ -22,10 +22,10 @@ export default function FeedbackWidget() {
       Swal.fire({
         icon: "warning",
         title: "Feedback required",
-        text: "Please share your feedback before submitting.",
+        text: "Please write your feedback before submitting.",
         background: "#0f172a",
         color: "#fff",
-        confirmButtonColor: "#8b5cf6",
+        confirmButtonColor: "#a78bfa",
       });
       return;
     }
@@ -33,9 +33,9 @@ export default function FeedbackWidget() {
     setLoading(true);
 
     const { error } = await supabase.from("feedback").insert({
-      name: name || null,
-      email: email || null,
-      feedback,
+      name: name.trim() || null,
+      email: email.trim() || null,
+      feedback: feedback.trim(),
       page_url: window.location.pathname,
     });
 
@@ -44,13 +44,12 @@ export default function FeedbackWidget() {
     if (error) {
       Swal.fire({
         icon: "error",
-        title: "Submission Failed",
+        title: "Could not submit",
         text: error.message,
         background: "#0f172a",
         color: "#fff",
-        confirmButtonColor: "#8b5cf6",
+        confirmButtonColor: "#a78bfa",
       });
-
       return;
     }
 
@@ -61,9 +60,9 @@ export default function FeedbackWidget() {
 
     Swal.fire({
       icon: "success",
-      title: "Thank you 💜",
-      text: "Your feedback helps us improve NT Student Hub.",
-      timer: 1800,
+      title: "Thank you!",
+      text: "Your feedback has been submitted.",
+      timer: 1600,
       showConfirmButton: false,
       background: "#0f172a",
       color: "#fff",
@@ -72,125 +71,71 @@ export default function FeedbackWidget() {
 
   return (
     <>
-      {/* Floating Card */}
-
-      <div className="fixed bottom-6 right-6 z-50 hidden md:block">
-        <div className="w-72 rounded-3xl border border-violet-100/10 bg-gradient-to-br from-slate-900 to-blue-950 p-5 shadow-2xl backdrop-blur-xl">
-
-          <div className="flex items-center gap-3">
-
-            <div className="rounded-2xl bg-violet-500/20 p-3">
-              <HeartHandshake className="h-6 w-6 text-fuchsia-300" />
-            </div>
-
-            <div>
-              <h3 className="font-black text-white">
-                Help us improve
-              </h3>
-
-              <p className="text-xs text-violet-100/60">
-                Your ideas matter.
-              </p>
-            </div>
-
-          </div>
-
-          <p className="mt-4 text-sm leading-6 text-violet-50/70">
-            Found a bug? Missing a feature? Have an idea that would make
-            NT Student Hub better?
-          </p>
-
-          <button
-            onClick={() => setOpen(true)}
-            className="mt-5 w-full rounded-2xl bg-violet-500 py-3 font-bold text-white transition hover:bg-violet-400"
-          >
-            Give Feedback
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Floating Button */}
-
       <button
+        type="button"
         onClick={() => setOpen(true)}
-        className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-violet-500 shadow-xl md:hidden"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full border border-violet-100/10 bg-violet-500 px-5 py-3 text-sm font-bold text-white shadow-2xl shadow-violet-500/30 transition hover:-translate-y-1 hover:bg-violet-400"
       >
-        <MessageSquareText className="h-6 w-6 text-white" />
+        <MessageSquareText className="h-5 w-5" />
+        Feedback
       </button>
 
-      {/* Dialog */}
-
       {open && (
-        <div className="fixed inset-0 z-[100] flex items-end justify-end bg-black/40 p-4 backdrop-blur-sm md:p-6">
-
+        <div className="fixed inset-0 z-[80] flex items-end justify-end bg-black/50 p-4 backdrop-blur-sm md:p-6">
           <div className="w-full max-w-md rounded-[2rem] border border-violet-100/10 bg-gradient-to-b from-slate-900 to-blue-950 p-6 text-white shadow-2xl">
-
-            <div className="flex items-start justify-between">
-
+            <div className="flex items-start justify-between gap-4">
               <div>
-
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-fuchsia-300">
-                  Feedback
-                </p>
-
-                <h2 className="mt-2 text-3xl font-black">
+                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-fuchsia-300">
                   Help us improve
-                </h2>
-
-                <p className="mt-3 text-sm leading-7 text-violet-50/70">
-                  We'd love to hear your ideas, report bugs, or know what
-                  features you'd like to see next.
                 </p>
-
+                <h2 className="mt-2 text-2xl font-black">Share Feedback</h2>
+                <p className="mt-2 text-sm leading-6 text-violet-50/65">
+                  Tell us what is missing, confusing, or what features we should
+                  add next.
+                </p>
               </div>
 
               <button
+                type="button"
                 onClick={() => setOpen(false)}
                 className="rounded-full bg-white/10 p-2 transition hover:bg-white/20"
               >
                 <X className="h-5 w-5" />
               </button>
-
             </div>
 
-            <form
-              onSubmit={handleSubmit}
-              className="mt-6 space-y-4"
-            >
-
+            <form onSubmit={handleSubmit} className="mt-6 space-y-4">
               <input
-                placeholder="Your name (optional)"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full rounded-2xl border border-violet-100/10 bg-white/5 px-4 py-3 outline-none"
+                placeholder="Your name (optional)"
+                className="w-full rounded-2xl border border-violet-100/10 bg-white/[0.06] px-4 py-3 text-sm outline-none placeholder:text-violet-100/45"
               />
 
               <input
-                placeholder="Email (optional)"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-2xl border border-violet-100/10 bg-white/5 px-4 py-3 outline-none"
+                placeholder="Email (optional)"
+                className="w-full rounded-2xl border border-violet-100/10 bg-white/[0.06] px-4 py-3 text-sm outline-none placeholder:text-violet-100/45"
               />
 
               <textarea
-                rows={6}
-                placeholder="Tell us what we can improve..."
                 value={feedback}
                 onChange={(e) => setFeedback(e.target.value)}
-                className="w-full resize-none rounded-2xl border border-violet-100/10 bg-white/5 px-4 py-3 outline-none"
+                rows={5}
+                placeholder="What should we improve or add?"
+                className="w-full resize-none rounded-2xl border border-violet-100/10 bg-white/[0.06] px-4 py-3 text-sm leading-6 outline-none placeholder:text-violet-100/45"
               />
 
               <button
+                type="submit"
                 disabled={loading}
-                className="w-full rounded-2xl bg-violet-500 py-3 font-bold transition hover:bg-violet-400 disabled:opacity-60"
+                className="w-full rounded-2xl bg-violet-400 px-5 py-3 font-bold text-[#160524] transition hover:bg-violet-300 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {loading ? "Submitting..." : "Submit Feedback"}
               </button>
-
             </form>
-
           </div>
-
         </div>
       )}
     </>
