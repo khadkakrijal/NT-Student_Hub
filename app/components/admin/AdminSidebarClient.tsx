@@ -15,6 +15,7 @@ import {
   LogOut,
   Megaphone,
   Flag,
+  MessageSquareText,
 } from "lucide-react";
 import { createClient } from "@/app/lib/supabase/client";
 
@@ -26,6 +27,7 @@ export default function AdminSidebarClient({
     events: number;
     community: number;
     jobs: number;
+    feedback?: number;
   };
 }) {
   const pathname = usePathname();
@@ -80,6 +82,12 @@ export default function AdminSidebarClient({
       href: "/admin/reports",
       icon: Flag,
       count: 0,
+    },
+    {
+      label: "Feedback",
+      href: "/admin/feedback",
+      icon: MessageSquareText,
+      count: counts.feedback || 0,
     },
   ];
 

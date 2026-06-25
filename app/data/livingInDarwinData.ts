@@ -414,49 +414,85 @@ export const livingPages: LivingPage[] = [
 
   {
     slug: "education",
-    title: "Education & Universities",
+    title: "Education & Study Providers",
     icon: GraduationCap,
     description:
-      "Understand CDU campuses, private colleges, CRICOS checks, education agents, student support and choosing accommodation based on campus location.",
+      "Explore universities, colleges, training providers, CRICOS checks, campus location, student support and education agents in Darwin.",
     sections: [
       {
-        heading: "Charles Darwin University",
+        heading: "Major University in Darwin",
+        summary:
+          "Charles Darwin University is one of the main education providers for international students in the Northern Territory.",
         points: [
-          "CDU Casuarina is one of Darwin’s major education locations.",
-          "CDU also has city campus facilities.",
-          "Students should check their exact campus before choosing accommodation.",
-          "Travel time can be different depending on whether classes are at Casuarina or city campus.",
-          "Use student support services for academic, wellbeing and enrolment help.",
+          "Charles Darwin University (CDU) – Public university offering undergraduate, postgraduate, research, English language and vocational education programs. Website: https://www.cdu.edu.au",
+          "CDU Casuarina is a major campus for higher education, vocational education and research.",
+          "CDU also has Darwin city campus facilities, so students should confirm their exact campus before choosing accommodation.",
+          "Travel time can be different depending on whether classes are at Casuarina, Darwin CBD or another delivery location.",
+          "Students should use CDU student support services for academic, wellbeing, enrolment and international student help.",
         ],
         studentTips: [
           "Check your timetable before finalising accommodation.",
-          "Save your student support contact details.",
-          "Attend orientation if available.",
+          "Save your student support and course coordinator contact details.",
+          "Attend orientation to understand campus facilities, student services and support options.",
         ],
       },
       {
-        heading: "Private colleges and providers",
+        heading: "Colleges & Training Providers",
+        summary:
+          "Darwin has several private colleges and training providers. Always verify CRICOS registration, campus location, fees and course availability before applying.",
         points: [
-          "Darwin has different education and training providers.",
-          "Students should check CRICOS registration before enrolling.",
-          "Confirm campus address, delivery mode, fees, intake dates and refund rules.",
-          "Keep copies of offer letter, CoE, payment receipts and visa documents.",
-          "Ask questions before signing or paying.",
+          "Canterbury Institute of Management (CIM) – Higher education provider with a Darwin campus, offering business, IT and management programs. Website: https://ciom.edu.au",
+          "Southern Cross College / Southern Cross Education Institute (SCEI) – Education provider offering vocational and higher education pathways. Website: https://www.scei.edu.au",
+          "Latitude College – Training provider offering vocational and practical industry-focused qualifications. Website: https://latitude.edu.au/",
+          "Alana Kaye College – Vocational education provider offering courses in areas such as business, leadership, community services, hospitality and early childhood education. Website:https://alanakaye.edu.au/",
+          "International College of Advanced Education (ICAE) – Darwin-based provider offering vocational education and training pathways. Website:https://icae.edu.au/",
+          "Fox Institute / Fox Education – Education provider supporting international students with study pathways. Website: https://fox.edu.au/",
+        ],
+        studentTips: [
+          "Always check whether the provider and course are CRICOS registered.",
+          "Confirm the exact campus address before choosing accommodation.",
+          "Compare tuition fees, payment plans, entry requirements and course duration.",
+          "Ask about practical placement, internships, work-integrated learning or industry connections.",
+          "Keep copies of offer letter, CoE, receipts, refund policy and enrolment documents.",
+        ],
+        commonMistakes: [
+          "Choosing a provider only because a friend recommended it.",
+          "Not checking the actual campus location.",
+          "Ignoring transport time between home, campus and work.",
+          "Not reading refund, deferment or course transfer policies.",
         ],
       },
       {
-        heading: "Education agents",
+        heading: "Before You Enrol",
+        summary:
+          "Students should compare providers carefully before paying fees or signing documents.",
         points: [
-          "Education agents can help with applications and provider information.",
-          "For migration advice, check whether the person is a registered migration agent.",
-          "Do not rely only on social media comments for course or visa decisions.",
+          "Check CRICOS registration for both the provider and the specific course.",
+          "Confirm whether classes are face-to-face, online, blended or delivered at another campus.",
+          "Ask about total tuition fees, extra material fees, placement requirements and timetable expectations.",
+          "Check whether the course suits your long-term career, visa and migration goals.",
+          "Do not rely only on Facebook posts, friends or unofficial advice for major study decisions.",
+        ],
+        studentTips: [
+          "Use official provider websites and official Australian Government sources for final confirmation.",
+          "Ask for written confirmation of important information.",
+          "Speak to student support if you are unsure about enrolment, attendance or course progress requirements.",
+        ],
+      },
+      {
+        heading: "Education Agents",
+        summary:
+          "Education agents can help with applications and course options, but students should still verify important information themselves.",
+        points: [
+          "Education agents can help with course applications, provider options, admission documents and general study planning.",
+          "For migration advice, confirm whether the person is a registered migration agent.",
           "Compare official provider information with what an agent tells you.",
-          "Keep written records of advice and payments.",
+          "Keep written records of advice, applications and payments.",
+          "Never sign documents or pay fees if you do not understand the conditions.",
         ],
       },
     ],
   },
-
   {
     slug: "jobs",
     title: "Jobs & Employment",

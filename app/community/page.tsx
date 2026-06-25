@@ -1,5 +1,13 @@
 import Link from "next/link";
-import { LogIn, MessagesSquare, ShieldCheck, UserPlus } from "lucide-react";
+import {
+  ExternalLink,
+  Users,
+  LogIn,
+  MessagesSquare,
+  ShieldCheck,
+  UserPlus,
+} from "lucide-react";
+import { FaFacebook } from "react-icons/fa";
 import CreatePostDialog from "@/app/components/community/CreatePostDialog";
 import CommunityFilterClient from "@/app/components/community/CommunityFilterClient";
 import { getApprovedCommunityPosts } from "@/app/api/apiServices/communityService";
@@ -12,6 +20,36 @@ export default async function CommunityPage() {
   const savedCommunityIds = await getSavedItemIds("community");
 
   const canCreatePost = !!profile;
+
+  const facebookGroups = [
+    {
+      name: "Darwin ma Kaam",
+      purpose:
+        "Jobs, casual work, part-time opportunities and local work updates.",
+      url: "https://www.facebook.com/groups/4094960673876115",
+      tag: "Jobs",
+    },
+    {
+      name: "Nepalese in Darwin",
+      purpose:
+        "Rooms, community help, events, questions and local student support.",
+      url: "https://www.facebook.com/groups/345952839131114",
+      tag: "Community",
+    },
+    {
+      name: "Nepalese in Darwin B",
+      purpose:
+        "Rooms, community help, events, questions and local student support.",
+      url: "https://www.facebook.com/groups/1244591956016132",
+      tag: "Community",
+    },
+    {
+      name: "NT State Nomination, EOI, Visa 491 and 190",
+      purpose: "Visa, migration, EOI and NT nomination related discussions.",
+      url: "https://www.facebook.com/groups/822016559798310/?ref=share&mibextid=wwXIfr&rdid=7JhWe6wpBHe30XpO&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fg%2F1D3SZjEkcV%2F%3Fmibextid%3DwwXIfr#",
+      tag: "Visa",
+    },
+  ];
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-900 to-blue-950 px-6 pb-20 pt-25">
@@ -54,7 +92,64 @@ export default async function CommunityPage() {
             </div>
           </div>
         </section>
+        <section className="mt-8 rounded-[2rem] border border-violet-100/10 bg-white/[0.06] p-6 backdrop-blur-xl md:p-8">
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-fuchsia-300">
+                Helpful Facebook Groups
+              </p>
 
+              <h2 className="mt-3 text-3xl font-black text-white">
+                Find jobs, rooms, visa help and community updates
+              </h2>
+
+              <p className="mt-3 max-w-3xl text-sm leading-7 text-violet-50/70">
+                These Facebook groups may help students connect with the local
+                Nepalese community, find rooms, look for casual jobs, and ask
+                migration-related questions.
+              </p>
+            </div>
+
+            <div className="rounded-full border border-yellow-300/20 bg-yellow-400/10 px-4 py-2 text-xs font-semibold text-yellow-100">
+              Always verify information before making decisions
+            </div>
+          </div>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            {facebookGroups.map((group) => (
+              <a
+                key={group.name}
+                href={group.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-[1.7rem] border border-violet-100/10 bg-white/[0.05] p-5 transition hover:-translate-y-1 hover:border-fuchsia-300/40 hover:bg-white/[0.08]"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-500/20">
+                    <FaFacebook className="h-6 w-6 text-[#1877F2]" />
+                  </div>
+
+                  <span className="rounded-full bg-violet-400/15 px-3 py-1 text-xs font-bold text-fuchsia-200">
+                    {group.tag}
+                  </span>
+                </div>
+
+                <h3 className="mt-5 text-xl font-black text-white">
+                  {group.name}
+                </h3>
+
+                <p className="mt-3 min-h-20 text-sm leading-7 text-violet-50/70">
+                  {group.purpose}
+                </p>
+
+                <div className="mt-5 flex items-center gap-2 text-sm font-bold text-fuchsia-300">
+                  Open Facebook Group
+                  <ExternalLink className="h-4 w-4" />
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
         {!canCreatePost && (
           <section className="mt-8 rounded-[2rem] border border-fuchsia-300/15 bg-gradient-to-r from-violet-400/15 to-fuchsia-400/15 p-6 backdrop-blur-xl md:p-8">
             <div className="flex flex-col justify-between gap-5 md:flex-row md:items-center">
